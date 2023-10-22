@@ -1,0 +1,36 @@
+.level1 {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.containerheader {
+    max-width: 60vw;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.level1-left {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    border: 2px 0;
+    padding: 0.5rem 0.75rem;
+    vertical-align: middle;
+}
+
+
+.level-right {
+    display: inline-block;
+    position: absolute;
+    vertical-align: middle;
+    padding: 0.5rem 0.75rem;
+    text-align: right;
+    border: 2px 0;
+    right: 0;
+}
+
+.logo-img {
+    height: 5vh;
+}
