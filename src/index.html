@@ -109,6 +109,9 @@
                     font-size: 14px;
                 }
             }
+            .navbar {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
 
             .intro {
                 font-size: 14px;
@@ -217,7 +220,7 @@
 
             @media (max-width: 1024px) {
                 #header_1 .navbar-menu {
-                    background: #000;
+                    background-color: rgba(0, 0, 0, 0.1);
                     padding: 0;
                 }
             }
@@ -909,10 +912,14 @@
                 <div class="is-primary-bg">
                     <div class="container">
                         <nav class="navbar">
+                            <div style="text-align: center; position: absolute; left: 50%; top: 0%; transform: translate(-50%, 0%); color: #fff;" class="is-hidden-tablet">
+                                <div style="font-size: 1.3em;">
+                                    XINGMENG</div>
+                                <div>
+                                    星盟律师事务所</div>
+                            </div>
                             <div class="navbar-brand is-hidden-tablet">
-                                <a class="navbar-item" href="index.html">
-                                    <img src="./image/logo.png" loading="lazy">
-                                </a>
+                                
                                 <a class="navbar-burger burger" data-target="navbarDetail">
                                     <span aria-hidden="true"></span>
                                     <span aria-hidden="true"></span>
@@ -920,7 +927,7 @@
                                 </a>
                             </div>
                             <div id="navbarDetail" class="navbar-menu is-hidden-tablet">
-                                <div class="navbar-start">
+                                <div class="navbar-start" style="text-align: center;">
                                     <a class="navbar-item" href="brief.html">事务所介绍</a>
                                     <a class="navbar-item" href="introduction.html">律师介绍</a>
                                     <a class="navbar-item" href="services.html">服务领域</a>
@@ -951,6 +958,16 @@
                     </div>
                     <div style="border: 0.5px solid #ececec; width: 100vw; margin: 0 0vw 0 0vw;" class="is-hidden-mobile"></div>
                 </div>
+            </div>
+            <style type="text/css">
+                .textIndex {
+                    font-size: 2.52em;
+                    color: #fff;
+                    text-align: center;
+                }
+            </style>
+            <div class="textIndex">
+                轻松跨入互联网时代<br>专注律师MCN打造，为律师提供海量客源
             </div>
         </header>
         <script>
@@ -986,501 +1003,196 @@
             }
         </script>
     </div>
-    <!-- 新闻资讯 -->
 
-    <div component="xinwenliebiao_1_1.html">
+    <div component="index_intro.html">
+        <link rel="stylesheet" href="./首页_files/lightgallery.css">
         <style type="text/less">
-            #xinwenliebiao_1_1 {
-        .title {
-            margin-bottom: 0;
-            padding: 0 0 1px * 2 0;
-            color: #000;
-            font-size: 20px;
-        }
-        .categorys {
-            display: flex;
-            flex-direction: column;
-            background: #fff;
-            height: fit-content;
-            position: relative;
-            
-            @media (max-width: 768px) {
-                flex-direction: row;
-                overflow-x: scroll;
-                &.has-scroll::after {
-                    content: '';
-                    background-color: rgba(244, 245, 246, 0.8);
-                    width: 5px;
-                    height: 21px;
-                    right: 0;
-                    top: 10px;
-                    position: absolute;
-                }
-            }
-            .category {
-                display: flex;
-                justify-content: space-between;
-                color: #4a4a4a;
-                font-size: 14px;
-                margin-top: 0;
-                margin-bottom: 0;
-                padding: 10px 0;
-                border-bottom: 1px solid #cbcbcb;
-                @media (max-width: 768px) {
-                    padding-right: 10px;
-                    white-space: nowrap;
-                    border-bottom: 0;
-                    padding-left: 0!important;
-                }
-                a {
-                    color: inherit;
-                    &:hover,&.is-active  {
-                        color: #3273dc;
+            #gongsijieshao1{
+                    .contents {
+                        p {
+                            font-size: 14px;
+                            line-height: 30px;
+                            text-indent: 0;
+                        }
                     }
                 }
-                /* 二级分类开关样式 */
-                .open_category {
-                    cursor: pointer;
-                    color: #4a4a4a;
-                    font-size: 24px;
-                    display: inline-block;
-                    height: 20px;
-                    line-height: 20px;
-                    padding-right: 15px;
-                    @media (max-width: 768px) {
-                        font-size: unset;
-                        height: unset;
-                        line-height: unset;
-                        padding-right: unset;
-                    }
-                }
-            }
-            /* 二级分类样式 */
-            .child_category {
-                display: none;
-            }
-        }
-        .xinwen-item {
-            margin-bottom: 1px * 4;
-            padding-bottom: 1px * 2;
-            border-bottom: 1px solid #cbcbcb;
-            @media (max-width: 768px) {
-                margin-bottom: 1px * 2;
-            }
-            .content {
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                .title {
-                    font-size: 20px;
-                    margin-bottom: 1px * 2;
-                    padding: 0;
-                    /*.ellipsis();*/
-                }
-                .subtitle {
-                    font-size: 10px;
-                    margin-top: 0;
-                    margin-bottom: 1px;
-                    color: rgba(0, 0, 0, 0.45);
-                }
-                .intro {
-                    text-indent: 0;
-                    font-size: 16px;
-                    color: rgba(0, 0, 0, 0.45);
-                    line-height: 1.5;
-
-                    display: -webkit-box;  
-                    -webkit-line-clamp: 5;  
-                    -webkit-box-orient: vertical;  
-                    overflow: hidden;  
-                    /*.multi-ellipsis(5);*/
-                }
-                .more_intro {
-                    display: flex;
-                    justify-content: space-between;
-                    font-size: 14px;
-                    color: rgba(0, 0, 0, 0.45);
-                    .date {
-                        padding-right: 1px;
-                    }
-                    i {
-                        padding-right: 1px;
-                    }
-                    .more {
-                        color: rgba(0, 0, 0, 0.45);
-                    }
-                }
-                
-            }
-            .intro_category {
-                color: rgba(0, 0, 0, 0.45);
-                padding-right: 1px;
-            }
-        }
-    }
-</style>
-        <div id="xinwenliebiao_1_1" class="section" style="visibility: visible;">
+        </style>
+        <div id="gongsijieshao1" class="section" style="visibility: visible;">
             <div class="container">
+                <div class="title-item">
+                    <div class="title-block-1">
+                        <h1 class="title is-spaced">事务所简介</h1>
+                        <h2 class="subtitle">BRIEF INDUCTION</h2>
+                    </div>
+                    <a href="./brief.html" class="more">了解更多&gt;&gt;</a>
+                </div>
 
-                <div component="1_1_articles.js" data="{
-            'show_size': -1, 
-            'show_pre_page': 4, 
-            'image_ratio': 0.66, 
-            'object_fit': 'cover'
-        }">
-
-                    <div class="columns">
-                        <div class="column is-3">
-                            <div class="title has-text-centered-mobile">新闻动态</div>
-                            <div class="categorys">
-                                <div class="category" style="padding-left: 0rem"><a class="is-active"
-                                        href="http://d642zevj.template.caihongjianzhan.com/xinwenzixun.html">全部新闻</a>
-                                </div>
-                                <div class="category" style="padding-left: 0rem"><a class=""
-                                        href="http://d642zevj.template.caihongjianzhan.com/article_category_880.html">公司动态</a>
-                                </div>
-                                <div class="category" style="padding-left: 0rem"><a class=""
-                                        href="http://d642zevj.template.caihongjianzhan.com/article_category_879.html">行业动态</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="articles">
-
-                                <div class="xinwen-item" style="display: block;">
-                                    <div class="columns">
-                                        <div class="column is-3">
-                                            <a href="http://d642zevj.template.caihongjianzhan.com/article_2572.html"
-                                                class="image is-4by3" style="padding-top: 66%;">
-                                                <img data-src="//cdn.xuansiwei.com/d642zevj/1578018975669/a3.png?x-oss-process=style/small"
-                                                    alt="企业家日报与中国企业报道携手打造电子报平台" src="./服务领域_files/a3.png"
-                                                    style="object-fit: cover;" loading="lazy">
-                                            </a>
-                                        </div>
-                                        <div class="column">
-                                            <div class="content">
-                                                <div>
-                                                    <a href="http://d642zevj.template.caihongjianzhan.com/article_2572.html"
-                                                        class="title"
-                                                        title="企业家日报与中国企业报道携手打造电子报平台">企业家日报与中国企业报道携手打造电子报平台</a>
-                                                    <p class="intro">
-                                                        企业家日报电子版将成为企业家日报的重要资产和传播手段，多年来国内外读者和网友关注度高、需求量大，是业界舆论领域的重要阵地、原创信息的重要渠道、深度报道的主要窗口，已经成为企业家日报报网一体化平台的重要载体。
-                                                        企业家日报电子版在中国企业报道网首页重要位置，醒目便捷。版面清晰，易于查找。
-                                                    </p>
-                                                </div>
-                                                <div class="more_intro">
-                                                    <div>
-
-                                                        <span class="date">2020-01-03</span>
-                                                        <span><i class="fa fa-eye"></i>
-                                                            <script src="./服务领域_files/2572"></script>25
-                                                        </span>
-                                                    </div>
-                                                    <div>
-                                                        <a href="http://d642zevj.template.caihongjianzhan.com/article_2572.html"
-                                                            class="more">查看全文 &gt;</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="xinwen-item" style="display: block;">
-                                    <div class="columns">
-                                        <div class="column is-3">
-                                            <a href="http://d642zevj.template.caihongjianzhan.com/article_2573.html"
-                                                class="image is-4by3" style="padding-top: 66%;">
-                                                <img data-src="//cdn.xuansiwei.com/d642zevj/1578019004003/a4.png?x-oss-process=style/small"
-                                                    alt="自动改变游戏规则" src="./服务领域_files/a4.png" style="object-fit: cover;"
-                                                    loading="lazy">
-                                            </a>
-                                        </div>
-                                        <div class="column">
-                                            <div class="content">
-                                                <div>
-                                                    <a href="http://d642zevj.template.caihongjianzhan.com/article_2573.html"
-                                                        class="title" title="自动改变游戏规则">自动改变游戏规则</a>
-                                                    <p class="intro">
-                                                        2005年3月21日，北京北小营的汇源集团总部，朱新礼在一纸合同上郑重地签下了自个的姓名。随后，将这纸协作合同传真到一致，两边在没有签字仪式的情况下，达成了一项协作合同。北京汇源饮料食物集团分拆有些果蔬汁财物，台湾一致集团出资3030万美元，两个老对手合资建立“我国汇源果汁控股有限公司”，图谋发明东南亚最大的果汁出产公司。
-                                                        外界评论说：“朱新礼是凶猛的，他让一个总财物只需49亿元公民币的‘北京汇源’，经过授权本钱，奇妙地将‘我国汇源’面向世界本钱商场。”
-                                                    </p>
-                                                </div>
-                                                <div class="more_intro">
-                                                    <div>
-
-                                                        <span class="date">2020-01-03</span>
-                                                        <span><i class="fa fa-eye"></i>
-                                                            <script src="./服务领域_files/2573"></script>8
-                                                        </span>
-                                                    </div>
-                                                    <div>
-                                                        <a href="http://d642zevj.template.caihongjianzhan.com/article_2573.html"
-                                                            class="more">查看全文 &gt;</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="xinwen-item" style="display: block;">
-                                    <div class="columns">
-                                        <div class="column is-3">
-                                            <a href="http://d642zevj.template.caihongjianzhan.com/article_2574.html"
-                                                class="image is-4by3" style="padding-top: 66%;">
-                                                <img data-src="//cdn.xuansiwei.com/d642zevj/1578019028080/a3.png?x-oss-process=style/small"
-                                                    alt="自动改变游戏规则" src="./服务领域_files/a3(1).png"
-                                                    style="object-fit: cover;" loading="lazy">
-                                            </a>
-                                        </div>
-                                        <div class="column">
-                                            <div class="content">
-                                                <div>
-                                                    <a href="http://d642zevj.template.caihongjianzhan.com/article_2574.html"
-                                                        class="title" title="自动改变游戏规则">自动改变游戏规则</a>
-                                                    <p class="intro">
-                                                        2005年3月21日，北京北小营的汇源集团总部，朱新礼在一纸合同上郑重地签下了自个的姓名。随后，将这纸协作合同传真到一致，两边在没有签字仪式的情况下，达成了一项协作合同。北京汇源饮料食物集团分拆有些果蔬汁财物，台湾一致集团出资3030万美元，两个老对手合资建立“我国汇源果汁控股有限公司”，图谋发明东南亚最大的果汁出产公司。
-                                                        外界评论说：“朱新礼是凶猛的，他让一个总财物只需49亿元公民币的‘北京汇源’，经过授权本钱，奇妙地将‘我国汇源’面向世界本钱商场。”
-                                                    </p>
-                                                </div>
-                                                <div class="more_intro">
-                                                    <div>
-
-                                                        <span class="date">2020-01-03</span>
-                                                        <span><i class="fa fa-eye"></i>
-                                                            <script src="./服务领域_files/2574"></script>1
-                                                        </span>
-                                                    </div>
-                                                    <div>
-                                                        <a href="http://d642zevj.template.caihongjianzhan.com/article_2574.html"
-                                                            class="more">查看全文 &gt;</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="xinwen-item" style="display: block;">
-                                    <div class="columns">
-                                        <div class="column is-3">
-                                            <a href="http://d642zevj.template.caihongjianzhan.com/article_2571.html"
-                                                class="image is-4by3" style="padding-top: 66%;">
-                                                <img data-src="//cdn.xuansiwei.com/d642zevj/1577957547071/a2.png?x-oss-process=style/small"
-                                                    alt="新闻类网页设计的十大Style"
-                                                    src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                                    style="object-fit: cover;" loading="lazy">
-                                            </a>
-                                        </div>
-                                        <div class="column">
-                                            <div class="content">
-                                                <div>
-                                                    <a href="http://d642zevj.template.caihongjianzhan.com/article_2571.html"
-                                                        class="title" title="新闻类网页设计的十大Style">新闻类网页设计的十大Style</a>
-                                                    <p class="intro">
-                                                        在数字化浪潮之下，用户普遍使用社交媒体阅读新闻，新闻门户网站在交互性、可视化方面远不及移动端的更迭速度，如何同时吸引传统平台和社交媒体的用户是媒体面临的新难题。
-                                                    </p>
-                                                </div>
-                                                <div class="more_intro">
-                                                    <div>
-
-                                                        <span class="date">2020-01-02</span>
-                                                        <span><i class="fa fa-eye"></i>
-                                                            <script src="./服务领域_files/2571"></script>3
-                                                        </span>
-                                                    </div>
-                                                    <div>
-                                                        <a href="http://d642zevj.template.caihongjianzhan.com/article_2571.html"
-                                                            class="more">查看全文 &gt;</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="xinwen-item" style="display: none;">
-                                    <div class="columns">
-                                        <div class="column is-3">
-                                            <a href="http://d642zevj.template.caihongjianzhan.com/article_2570.html"
-                                                class="image is-4by3" style="padding-top: 66%;">
-                                                <img data-src="//cdn.xuansiwei.com/d642zevj/1577957515142/a1.png?x-oss-process=style/small"
-                                                    alt="新闻类网站的设计秘诀"
-                                                    src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                                    style="object-fit: cover;" loading="lazy">
-                                            </a>
-                                        </div>
-                                        <div class="column">
-                                            <div class="content">
-                                                <div>
-                                                    <a href="http://d642zevj.template.caihongjianzhan.com/article_2570.html"
-                                                        class="title" title="新闻类网站的设计秘诀">新闻类网站的设计秘诀</a>
-                                                    <p class="intro">
-                                                        最近，一个朋友建议我写点关于新闻类网站的分析：什么是正确的新闻类网页设计，什么是错误的。他认为现今的线上新闻用户体验非常落后，让人感到厌倦无比，而且只是他们不用心做罢了，采用AJAX或者类似的技术就能把内容呈递的完善，而且导航做得十足精美。
-                                                    </p>
-                                                </div>
-                                                <div class="more_intro">
-                                                    <div>
-
-                                                        <span class="date">2020-01-02</span>
-                                                        <span><i class="fa fa-eye"></i>
-                                                            <script src="./服务领域_files/2570"></script>1
-                                                        </span>
-                                                    </div>
-                                                    <div>
-                                                        <a href="http://d642zevj.template.caihongjianzhan.com/article_2570.html"
-                                                            class="more">查看全文 &gt;</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="pagination is-centered is-hidden-mobile">
-                                <a class="pagination-previous" disabled="disabled"
-                                    href="javascript:renderPrev()">上一页</a>
-                                <a class="pagination-next" href="javascript:renderNext()">下一页</a>
-                                <ul class="pagination-list">
-                                    <li><a class="pagination-link is-current" href="javascript:renderPage(1)">1</a></li>
-                                    <li><a class="pagination-link " href="javascript:renderPage(2)">2</a></li>
-                                </ul>
-                            </div>
-                            <!--div class="scrollerFooter is-hidden-desktop has-text-centered">
-                                <button class="button is-loading" style="border: 0;">Loading</button>
-                            </div-->
-                            <script>
-                                //每页显示的数目
-                                var show_per_page = 4;
-                                var count = 5;
-                                var p_lens = 2;
-                                // 当前页面
-                                var curr_page = 1;
-                                var module_selector = '#xinwenliebiao_1_1';
-
-                                function renderPrev() {
-                                    if (curr_page > 1) {
-                                        renderPage(curr_page - 1);
-                                    }
-                                }
-                                function renderNext() {
-                                    if (curr_page < p_lens) {
-                                        renderPage(curr_page + 1);
-                                    }
-                                }
-                                function renderPage(page) {
-                                    if (curr_page > 1) {
-                                        $(module_selector + ' .pagination-previous').attr('disabled', false);
-                                    } else {
-                                        $(module_selector + ' .pagination-previous').attr('disabled', true);
-                                    }
-                                    if (curr_page === p_lens) {
-                                        $(module_selector + ' .pagination-next').attr('disabled', true);
-                                    } else {
-                                        $(module_selector + ' .pagination-next').attr('disabled', false);
-                                    }
-                                    //切换产品
-                                    $(module_selector + ' .articles').children().hide();
-                                    $(module_selector + ' .articles').children().slice((page - 1) * show_per_page, page * show_per_page).css('display', 'block');
-                                    $(module_selector + ' .is-current').removeClass('is-current');
-                                    $(module_selector + ' .page_item_' + page).addClass('is-current');
-
-                                    // 切换分页
-                                    var a = [];
-                                    var b = [];
-                                    var prevFlag = true;
-                                    var preprevFlag = true;
-                                    for (var i = 0; i < p_lens; i++) {
-                                        a.push(i + 1);
-                                    }
-                                    a.forEach(item => {
-                                        if (item === 1 || item === p_lens || Math.abs(curr_page - item) <= 2) {
-                                            b.push(item);
-                                        } else if (prevFlag && item < curr_page) {
-                                            b.push(null);
-                                            prevFlag = false;
-                                        } else if (preprevFlag && item > curr_page) {
-                                            b.push(null);
-                                            preprevFlag = false;
-                                        }
-                                    });
-
-                                    $(module_selector + ' .pagination-list').html(b.map(item => {
-                                        if (item) {
-                                            return '<li><a class="pagination-link ' + (curr_page === item ? "is-current" : "") + '" href="javascript:renderPage(' + item + ')">' + item + '</a></li>';
-                                        }
-                                        return '<li><span class="pagination-ellipsis">&hellip;</span></li>';
-                                    }).join(""));
-
-                                    // 改变分页
-                                    if (curr_page !== page) {
-                                        curr_page = page;
-                                        renderPage(curr_page);
-                                    }
-                                }
-                                if (screen.availWidth > 768) {
-                                    renderPage(curr_page);
-                                } else {
-                                    var intersectionObserver = new IntersectionObserver(
-                                        function (entries) {
-                                            // 如果不可见，就返回
-                                            if (entries[0].intersectionRatio <= 0) return;
-                                            var hidden_articles = $(module_selector + ' .articles').children(':hidden');
-                                            if (hidden_articles.length > 0) {
-                                                setTimeout(() => {
-                                                    hidden_articles.slice(0, 6).css('display', 'block');
-                                                }, 500)
-                                            } else {
-                                                $('.scrollerFooter').hide();
-                                            }
-                                            console.log('Loaded new items');
-                                        });
-
-                                    // 开始观察
-                                    intersectionObserver.observe(
-                                        document.querySelector('.scrollerFooter')
-                                    );
-                                }
-                            </script>
-                        </div>
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <figure class="image is-2by1">
+                            <img src="./image/briefIntro.png" alt="关于我们" loading="lazy">
+                        </figure>
+                    </div>
+                    <div class="column is-8">
+                        <p class="contents">
+                            公司成立于1998年11月，是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。成立10多年以来，XXX一直秉承“一切以用户价值为依归”的经营理念，始终处于稳健发展的状态。2004年6月16日，XXX控股有限公司在香港联交所主板公开上市。
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <script>
-            $(function () {
-                var xinwenliebiao_selector = '#xinwenliebiao_1_1';
-                $(".open_category").click(function () {
-                    $(this).parent().next(".child_category").slideToggle(200);
-                });
-                if (screen.availWidth < 768) {
-                    if ($(xinwenliebiao_selector + ' .categorys')[0].scrollWidth > $(xinwenliebiao_selector + ' .categorys')[0].clientWidth) {
-                        $(xinwenliebiao_selector + ' .categorys').addClass('has-scroll');
-
-                        // 保证选中的栏目
-                        $(xinwenliebiao_selector + ' .categorys .is-active').last()[0].scrollIntoView()
-                    }
-                    $(xinwenliebiao_selector + ' .categorys').on('scroll', function () {
-                        if ($(this)[0].scrollLeft > 0) {
-                            $(this).removeClass('has-scroll')
-                        } else {
-                            $(this).addClass('has-scroll')
-                        }
-                    })
-                }
-            });
-        </script>
     </div>
 
+    <!-- 公司产品展示 -->
 
-    <!-- 公用底部 -->
+    <div component="index_products.html">
+        <style type="text/css">
+            #chanpinliebiao {
+                .item {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding: 3rem;
+                    color: #fff;
+        
+                    h1 {
+                        font-size: 18px;
+                    }
+        
+                    p {
+                        text-indent: 0;
+                        font-size: 14px;
+                    }
+                }
+        
+                .columns {
+                    @media (max-width: 768px) {
+                        margin-left: 0;
+                        margin-right: 0;
+                        margin-top: 0;
+        
+                        .column {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        </style>
+        <div id="chanpinliebiao" class="section" style="visibility: visible;">
+            <div class="container">
+                <div class="title-item">
+                    <div class="title-block-1">
+                        <h1 class="title is-spaced">服务领域</h1>
+                        <h2 class="subtitle">SERVICES AREA</h2>
+                    </div>
+                    <a href="./services.html" class="more">了解更多&gt;&gt;</a>
+                </div>
+
+                <div class="columns is-multiline is-mobile" >
+                    <div class="column is-4-tablet is-12-touch">
+                        <figure class="image is-4by3">
+                            <img src="./image/index/netline.png" alt="" loading="lazy">
+                        </figure>
+                    </div>
+                    <div class="column is-4-tablet is-12-touch" >
+                        <div class="item" style="background: #1E51AD; color: #ffffff;">
+                            <h1>数据中心托管服务</h1>
+                            <p style="text-indent: 0; font-size: 0.9em;">通过Free Cooling、全面环境监控系统、模块化建设、高效的气流组织结构设计等领先方案为客户打造新一代绿色高效通过</p>
+                        </div>
+                    </div>
+                    <div class="column is-4-tablet is-12-touch">
+                        <figure class="image is-4by3">
+                            <img src="./image/index/stock.png" alt="" loading="lazy">
+                        </figure>
+                    </div>
+                    <div class="column is-4-tablet is-12-touch" >
+                        <div class="item" style="background: #98505C; color: #ffffff;">
+                            <h1>云计算服务</h1>
+                            <p style="text-indent: 0; font-size: 0.9em;">通过Free Cooling、全面环境监控系统、模块化建设、高效的气流组织结构设计等领先方案为客户打造新一代绿色高效通过</p>
+                        </div>
+                    </div>
+                    <div class="column is-4-tablet is-12-touch">
+                        <figure class="image is-4by3">
+                            <img src="./image/index/spike.png" alt="" loading="lazy">
+                        </figure>
+                    </div>
+                    <div class="column is-4-tablet is-12-touch">
+                        <div class="item" style="background: #4ABD60; color: #ffffff;">
+                            <h1>管理式网络服务</h1>
+                            <p style="text-indent: 0; font-size: 0.9em;">通过Free Cooling、全面环境监控系统、模块化建设、高效的气流组织结构设计等领先方案为客户打造新一代绿色高效通过</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div component="index_articles.html">
+        <div id="xinwenliebiao1" class="section" data-sr-id="3">
+            <div class="container">
+                <div class="title-item">
+                    <div class="title-block-1">
+                        <h1 class="title is-spaced">律师介绍</h1>
+                        <h2 class="subtitle">LAYWER INTRODUCTION</h2>
+                    </div>
+                    <a href="./introduction.html" class="more">了解更多&gt;&gt;</a>
+                </div>
+                <div class="columns">
+                    <div class="column is-7">
+                        <div component="index_articles.js">
+                            <div class="columns is-vcentered xinwen-item">
+                                <div class="column is-2">
+                                    <a href="http://d642zevj.template.caihongjianzhan.com/article_2572.html"
+                                        class="image is-1by1">
+                                        <img src="./首页_files/a3.png" alt="企业家日报与中国企业报道携手打造电子报平台" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <a href="http://d642zevj.template.caihongjianzhan.com/article_2572.html">
+                                        <h5 class="title">企业家日报与中国企业报道携手打造电子报平台</h5>
+                                    </a>
+                                    <p class="intro">
+                                        企业家日报电子版将成为企业家日报的重要资产和传播手段，多年来国内外读者和网友关注度高、需求量大，是业界舆论领域的重要阵地、原创信息的重要渠道、深度报道的主要窗口，已经成为企业家日报报网一体化平台的重要载体。
+                                        企业家日报电子版在中国企业报道网首页重要位置，醒目便捷。版面清晰，易于查找。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="columns is-vcentered xinwen-item">
+                                <div class="column is-2">
+                                    <a href="http://d642zevj.template.caihongjianzhan.com/article_2573.html"
+                                        class="image is-1by1">
+                                        <img src="./首页_files/a4.png" alt="自动改变游戏规则" loading="lazy">
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <a href="http://d642zevj.template.caihongjianzhan.com/article_2573.html">
+                                        <h5 class="title">自动改变游戏规则</h5>
+                                    </a>
+                                    <p class="intro">
+                                        2005年3月21日，北京北小营的汇源集团总部，朱新礼在一纸合同上郑重地签下了自个的姓名。随后，将这纸协作合同传真到一致，两边在没有签字仪式的情况下，达成了一项协作合同。北京汇源饮料食物集团分拆有些果蔬汁财物，台湾一致集团出资3030万美元，两个老对手合资建立“我国汇源果汁控股有限公司”，图谋发明东南亚最大的果汁出产公司。
+                                        外界评论说：“朱新礼是凶猛的，他让一个总财物只需49亿元公民币的‘北京汇源’，经过授权本钱，奇妙地将‘我国汇源’面向世界本钱商场。”
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="column is-5 is-hidden-mobile">
+                        <figure class="image">
+                            <img src="./image/index/building.png" alt="intro" loading="lazy">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div component="footer.html">
         <style type="text/less">
