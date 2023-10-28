@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>服务领域 - 上海星盟律师事务所</title>
+    <title>首页 - 上海星盟律师事务所</title>
     <meta name="keywords" content="星盟,律所">
-    <meta name="description" content="服务领域 - 上海星盟律师事务所">
+    <meta name="description" content="首页 - 上海星盟律师事务所">
 </head>
 
 <body style="height: 100%;">
@@ -200,7 +200,7 @@
 
             @media (min-width: 1024px) {
                 #header_1 .navbar {
-                    background: #000;
+                    background: none;
                 }
             }
 
@@ -248,7 +248,7 @@
                 #header_1 .navbar-item:not(.has-dropdown),
                 #header_1 .navbar-link {
                     /* padding: 0.5rem 6.3rem; */
-                    background: #000;
+                    background: none;
                 }
             }
 
@@ -274,7 +274,7 @@
             }
 
             #header_1 .is-primary-bg {
-                background: #000;
+                background: none;
             }
 
             #header_1 .padding-ud-3 {
@@ -903,27 +903,9 @@
                 box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
             }
         </style>
-        <header id="header_1">
-            <div class="container is-hidden-mobile">
-                <div class="level padding-ud-3">
-                    <div class="level-left">
-                        <a href="index.html" class="level-item">
-                            <img src="./image/logo.png" alt="logo" class="logo-img" loading="lazy">
-                        </a>
-                    </div>
-                    <div class="level-right is-primary-color">
-                        <div class="level-item font-size-16">
-                            <p>
-                                <span>通过互联网服务提升人类生活品质！</span> <br>
-                                <span>NTERNET SERVICES TO ENHANCE THE QUALITY OF HUMAN LIFE !</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <header id="header_1" href="#"
+            style="background-image: url(./image/homebanner.png); height: 100vh; width: 100vw; background-size: cover;">
             <div component="menus.js">
-
                 <div class="is-primary-bg">
                     <div class="container">
                         <nav class="navbar">
@@ -937,18 +919,37 @@
                                     <span aria-hidden="true"></span>
                                 </a>
                             </div>
-
-                            <div id="navbarDetail" class="navbar-menu">
+                            <div id="navbarDetail" class="navbar-menu is-hidden-tablet">
                                 <div class="navbar-start">
-                                    <a class="navbar-item" href="index.html">首页</a>
                                     <a class="navbar-item" href="brief.html">事务所介绍</a>
                                     <a class="navbar-item" href="introduction.html">律师介绍</a>
                                     <a class="navbar-item" href="services.html">服务领域</a>
                                     <a class="navbar-item" href="contactus.html">联系我们</a>
                                 </div>
                             </div>
+        
+                            <div id="navbarDetail" class="navbar-menu is-hidden-mobile"
+                                style="height: 16.66666667vh; font-size: 1.8em;">
+                                <div class="navbar-start">
+                                    <a class="navbar-item" href="brief.html">事务所介绍</a>
+                                    <a class="navbar-item" href="introduction.html">律师介绍</a>
+                                    <a class="navbar-item is-hidden-mobile" href="index.html">
+                                        <div style="text-align: center;">
+                                            <div style="font-size: 1.4em;">
+                                                XINGMENG</div>
+                                            <div>
+                                                星盟律师事务所</div>
+                                        </div>
+                                    </a>
+                                    <a class="navbar-item" href="services.html">服务领域</a>
+                                    <a class="navbar-item" href="contactus.html">联系我们</a>
+                                </div>
+                            </div>
+        
                         </nav>
+        
                     </div>
+                    <div style="border: 0.5px solid #ececec; width: 100vw; margin: 0 0vw 0 0vw;" class="is-hidden-mobile"></div>
                 </div>
             </div>
         </header>
@@ -985,43 +986,6 @@
             }
         </script>
     </div>
-    <div>
-        <style type="text/less">
-            .banner {
-                height: 380px;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                @media (max-width: 768px) {
-                    height: 200px;
-                    background-position: 72% center;
-                }
-                .title {
-                    color: white;
-                    font-size: 40px;
-                    @media (max-width: 768px) {
-                        font-size: 20px;
-                    }
-                }
-                .subtitle {
-                    color: white;
-                    font-size: 25px;
-                    @media (max-width: 768px) {
-                        font-size: 16px;
-                    }
-                }
-            }
-        </style>
-        <div class="homebanner" href="#" style="background-image: url(./image/homebanner.png); ">
-
-        </div>
-    </div>
-
-
     <!-- 新闻资讯 -->
 
     <div component="xinwenliebiao_1_1.html">
