@@ -12,87 +12,359 @@
     <meta name="description" content="">
     <link rel="dns-prefetch" href="http://cdn.xuansiwei.com/">
     <link rel="shortcut icon" href="./事务所介绍_files/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/header2.css">  
 </head>
 
 <body>
-    <header id="header_1">
-        <div class="container is-hidden-mobile">
-            <div class="level padding-ud-3">
-                <div class="level-left">
-                    <a href="http://d642zevj.template.caihongjianzhan.com/" class="level-item">
-                        <img dynamic-var="config['公共']['logo']" src="./事务所介绍_files/logo.svg"
-                            class="logo-img" loading="lazy">
-                    </a>
-                </div>
-                <div class="level-right is-primary-color">
-                    <div class="level-item font-size-16">
-                        <p>
-                            <span>通过互联网服务提升人类生活品质！</span> <br>
-                            <span>NTERNET SERVICES TO ENHANCE THE QUALITY OF HUMAN LIFE !</span>
-                        </p>
+    <div component="header.html">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.5/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-modal-fx@1.1.1/dist/css/modal-fx.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+        <script src="./script/push.js"></script>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
+        <style type="text/less" id="commom-style">
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';;
+            }
+            p {
+                text-align: left;
+                text-indent: 2em;
+                font-size: 16px;
+                line-height: 1.8;
+            }
+        
+            .section {
+                padding: 3rem 1.5rem 0 1.5rem;
+                @media (max-width: 768px) {
+                    padding: 2rem 0.5rem 0 0.5rem;    
+                }
+            }
+            .input:active, .input:focus, .is-active.input, .is-active.textarea, .is-focused.input, .is-focused.textarea, .select select.is-active, .select select.is-focused, .select select:active, .select select:focus, .textarea:active, .textarea:focus {
+                border-color: #3273dc;
+            }
+            .button.is-primary {
+                background-color: #3273dc;
+                .is-hovered, &:hover {
+                    background-color: #3273dc
+                }
+            }
+            .pagination-link.is-current {
+                background-color: #3273dc;
+                border-color: #3273dc;
+            }
+            .navbar-dropdown {
+                background: #000;
+                border-top-color: #000;
+            }
+        
+            .title {
+                font-size: 14px + 4px;
+                margin-bottom: 1px * 2;
+                @media (max-width: 768px) {
+                    font-size: 14px + 2px;
+                }
+            }
+            .subtitle {
+                font-size: 14px + 2px;
+                margin-bottom: 1px * 2;
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+            .intro {
+                font-size: 14px;
+                line-height: 2;
+                margin-bottom: 1px * 2;
+                @media (max-width: 768px) {
+                    font-size: 14px - 2px;
+                }
+            }
+        
+            .swiper-pagination-bullet-active {
+                background: #3273dc;
+            }
+        
+            .title-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 0 3rem 0;
+                @media (max-width: 768px) {
+                    margin: 0 0 2rem 0;
+                }
+            }
+            a.more {
+                color: black;
+            }
+            .title-block-1 {
+                .title {
+                    font-size: 20px;
+                    text-align: left;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #3273dc;
+                    margin: 0 auto;
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                    }
+                }
+                .subtitle {
+                    line-height: 1.5;
+                    margin: 0 auto;
+                    color: #4c4c4c;
+                    text-align: left;
+                    color: rgba(0, 0, 0, 0.45);
+                    font-family: Arial;
+                    font-size: 16px;
+                    @media (max-width: 768px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+            @media (max-width: 768px){
+                .columns{
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        </style>
+
+        <!--link rel="stylesheet" type="text/css" href="./服务领域_files/customer.css">
+        <script src="./服务领域_files/holder.js.download"></！script-->
+
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bulma-modal-fx@1.1.1/dist/js/modal-fx.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/holderjs@2.9.7/holder.min.js"></script>
+        <style type="text/less">
+            #header_1 {
+                .level {
+                    .level-left {
+                        .level-item img {
+                            max-height: 3.75rem;
+                        }
+                    }
+                    .level-right {
+                        .level-item p {
+                            text-align: right;
+                            span:last-child {
+                                color: black;
+                                font-size: 12px;
+                            }
+                            span:first-child {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+                .navbar {
+                    @media (min-width: 1024px) {
+                        background: black;
+                    }
+                }
+                .navbar-start{ 
+                    width:100%; 
+                    @media (min-width: 1024px) {
+                        .navbar-item { 
+                            flex: 1; 
+                            justify-content: center; 
+                        }
+                    }
+                }
+                
+                .navbar-menu {
+                    @media (max-width: 1024px) {
+                        background: black;
+                        padding: 0;
+                    }
+                }
+                .navbar-brand {
+                    align-items: center;
+                    img {
+                        max-height: 2.75rem;
+                    }
+                }
+                .navbar-burger{
+                    color: #3273dc;
+                    &:hover {
+                        color: #3273dc;
+                    }
+                }
+                .navbar-item:not(.has-dropdown), .navbar-link {
+                    color: #fff;
+                    @media (min-width: 1024px) {
+                        /* padding: 0.5rem 6.3rem; */
+                        background: black;
+                    }
+                }
+                .navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover {
+                    background: #3273dc;
+                    color: #fff;
+                }
+                .navbar-link.is-active:not(:focus):not(:hover), a.navbar-item.is-active:not(:focus):not(:hover) {
+                    background: #3273dc;
+                }
+                .is-primary-color {
+                    color: #3273dc;
+                }
+                .is-primary-bg {
+                    background: black;
+                }
+
+                .padding-ud-3 {
+                    padding: 30px 0;
+                }
+
+                .font-size-16 {
+                    font-size: 16px;
+                }
+
+                .i-mobile-style {
+                    font-size: 49px;
+                    padding: 0 8px;
+                }
+                .logo-img {
+                    max-height: 57px;
+                }
+            }
+            .navbar-link:not(.is-arrowless)::after{
+                border-color: #fff;
+            }
+            .stuck {
+                position:fixed;
+                width: 100%;
+                top:0;
+                z-index: 100;
+                background: #fff;
+                box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+            }
+        </style>
+        <header id="header_1">
+            <div class="container is-hidden-mobile">
+                <div class="level padding-ud-3">
+                    <div class="level-left">
+                        <a href="index.html" class="level-item">
+                            <img src="./image/logo.png" alt="logo" class="logo-img" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="level-right is-primary-color">
+                        <div class="level-item font-size-16">
+                            <p>
+                                <span>通过互联网服务提升人类生活品质！</span> <br>
+                                <span>NTERNET SERVICES TO ENHANCE THE QUALITY OF HUMAN LIFE !</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div component="menus.js">
+            <div component="menus.js">
 
-            <div class="is-primary-bg">
-                <div class="container">
-                    <nav class="navbar">
-                        <div class="navbar-brand is-hidden-tablet">
-                            <a class="navbar-item" href="http://d642zevj.template.caihongjianzhan.com/">
-                                <img src="./事务所介绍_files/logo.svg" loading="lazy">
-                            </a>
-                            <a class="navbar-burger burger" data-target="navbarDetail">
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                            </a>
-                        </div>
-
-                        <div id="navbarDetail" class="navbar-menu">
-                            <div class="navbar-start">
-                                <a class="navbar-item "
-                                    href="http://d642zevj.template.caihongjianzhan.com/index.html">首页</a>
-
-                                <div class="navbar-item has-dropdown is-hoverable">
-                                    <a class="navbar-link "
-                                        href="http://d642zevj.template.caihongjianzhan.com/xinwenzixun.html">新闻动态</a>
-                                    <div class="navbar-dropdown">
-                                        <a class="navbar-item "
-                                            href="http://d642zevj.template.caihongjianzhan.com/article_category_880.html"
-                                            style="padding-left: calc(3.6vw + 0em);">
-                                            公司动态
-                                        </a>
-
-
-                                        <a class="navbar-item "
-                                            href="http://d642zevj.template.caihongjianzhan.com/article_category_879.html"
-                                            style="padding-left: calc(3.6vw + 0em);">
-                                            行业动态
-                                        </a>
-
-
-                                    </div>
-                                </div>
-
-                                <a class="navbar-item "
-                                    href="http://d642zevj.template.caihongjianzhan.com/chanpinzhanshi.html">产品服务</a>
-                                <a class="navbar-item is-active"
-                                    href="http://d642zevj.template.caihongjianzhan.com/guanyuwomen.html">关于我们</a>
-                                <a class="navbar-item "
-                                    href="http://d642zevj.template.caihongjianzhan.com/lianxiwomen.html">联系我们</a>
+                <div class="is-primary-bg">
+                    <div class="container">
+                        <nav class="navbar">
+                            <div class="navbar-brand is-hidden-tablet">
+                                <a class="navbar-item" href="index.html">
+                                    <img src="./image/logo.png" loading="lazy">
+                                </a>
+                                <a class="navbar-burger burger" data-target="navbarDetail">
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                </a>
                             </div>
-                        </div>
-                    </nav>
+
+                            <div id="navbarDetail" class="navbar-menu">
+                                <div class="navbar-start">
+                                    <a class="navbar-item" href="index.html">首页</a>
+                                    <a class="navbar-item" href="brief.html">事务所介绍</a>
+                                    <a class="navbar-item" href="introduction.html">律师介绍</a>
+                                    <a class="navbar-item" href="services.html">服务领域</a>
+                                    <a class="navbar-item" href="contactus.html">联系我们</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <div component="guanyuwomen_banner.html">
-        <div class="banner" href="#"
-            style="background-image:url('//cdn.xuansiwei.com/d642zevj/1577955975782/aboutbanner.jpg?x-oss-process=style/small')">
+        </header>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll(
+                    '.navbar-burger'), 0);
+
+                // Check if there are any navbar burgers
+                if ($navbarBurgers.length > 0) {
+
+                    // Add a click event on each of them
+                    $navbarBurgers.forEach(el => {
+                        el.addEventListener('click', () => {
+
+                            // Get the target from the "data-target" attribute
+                            const target = el.dataset.target;
+                            const $target = document.getElementById(target);
+
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            el.classList.toggle('is-active');
+                            $target.classList.toggle('is-active');
+
+                        });
+                    });
+                }
+            });
+
+            if (window.innerWidth < 768) {
+                var sticky = new Waypoint.Sticky({
+                    element: $('#header_1')[0]
+                })
+            }
+        </script>
+    </div>
+
+    <!-- banner图 -->
+
+    <div>
+        <style type="text/less">
+            .banner {
+                height: 380px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                @media (max-width: 768px) {
+                    height: 200px;
+                    background-position: 72% center;
+                }
+                .title {
+                    color: white;
+                    font-size: 40px;
+                    @media (max-width: 768px) {
+                        font-size: 20px;
+                    }
+                }
+                .subtitle {
+                    color: white;
+                    font-size: 25px;
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        </style>
+        <div class="banner is-hidden-mobile" href="#" style="background-image: url(./image/banner.png);">
+
         </div>
     </div>
 
@@ -121,57 +393,90 @@
         </div>
     </div>
 
-    <!-- 公用底部 -->
-
+    
     <div component="footer.html">
+        <style type="text/less">
+            #gongyongdibu {
+                background: #212121;
+                margin-top: 1px * 3;
+                .footer-intro {
+                    padding-bottom: 24px;
+                }
+                .title {
+                    color: white;
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                }
+                .subtitle {
+                    color: #bfbfbf;
+                    margin-bottom: 1px * 2;
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    img {
+                        margin-right: 1px;
+                    }
+                }
+                .intro {
+                    color: #bfbfbf;
+                    text-indent: 0;
+                    overflow:hidden; text-overflow:ellipsis; display:-webkit-box !important; -webkit-line-clamp:5; -webkit-box-orient:vertical;
+                }
+                hr {
+                    width: 3em;
+                    background-color: #3273dc;
+                }
+            }
+            .copyright {
+                text-align: center;
+                font-size: 16px;
+                line-height: 4;
+                color: white;
+                background: black;
+                a {
+                    color: white;
+                }
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                    margin-top: 1px * 2;
+                }
+            } 
+        </style>
         <div id="gongyongdibu" class="is-hidden-mobile">
-            <div class="section" style="visibility: visible;">
+            <div class="section" data-sr-id="2" style="visibility: visible;">
                 <div class="footer-intro container">
                     <div class="columns">
-                        <div class="column is-4">
-                            <h1 class="title">联系方式</h1>
+                        <div class="column is-4" style="width: 50%;">
+                            <h1 class="title">星盟律师事务所</h1>
                             <hr>
                             <ul>
-                                <li class="subtitle"><img src="./事务所介绍_files/67326e5bfa5fcf0be15ce360991ebe79.png"
-                                        class="image is-24x24" loading="lazy"><span>电话：</span><span
-                                        dynamic-var="config['公共']['公司电话']">400-888-8888</span></li>
-                                <li class="subtitle"><img src="./事务所介绍_files/8b8d0c78bde65e37200ccc6b66c4c9de.png"
-                                        class="image is-24x24" loading="lazy"><span>手机：</span><span
-                                        dynamic-var="config['公共']['公司手机']">13888888888</span></li>
-                                <li class="subtitle"><img src="./事务所介绍_files/7c3681ea1c7654a673d25055d5e7bfa2.png"
-                                        class="image is-24x24" loading="lazy"><span>邮箱：</span><span
-                                        dynamic-var="config['公共']['公司邮箱']">4008888888@qq.com</span></li>
-                                <li class="subtitle"><img src="./事务所介绍_files/e9aa4d14f50065f7e5a278214eb9cea6.png"
-                                        class="image is-24x24" loading="lazy"><span>地址：</span><span
-                                        dynamic-var="config['公共']['公司地址']">广东省深圳市龙华新区横琴工业区1栋A座位306室</span>
+                                <li class="subtitle">
+                                    公司成立于1998年11月，是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。成立10多年以来，XXX一直秉承“一切以用户价值为依归”的经营理念，始终处于稳健发展的状态。2004年6月16日，XXX控股有限公司在香港联交所主板公开上市。
                                 </li>
                             </ul>
                         </div>
-                        <div class="column is-4">
-                            <h1 class="title">某某公司</h1>
-                            <hr>
-                            <p dynamic-var="config['公共']['公司简介']" class="intro">
-                                公司成立于1998年11月，是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。成立10多年以来，XXX一直秉承“一切以用户价值为依归”的经营理念，始终处于稳健发展的状态。2004年6月16日，XXX控股有限公司在香港联交所主板公开上市。
-                            </p>
-                        </div>
-                        <div class="column is-offset-1">
-                            <h1 class="title">导航栏</h1>
-                            <hr>
-
-                            <div component="footer_menus.js">
-                                <ul>
-                                    <li><a href="http://d642zevj.template.caihongjianzhan.com/index.html"
-                                            class="subtitle">首页</a></li>
-                                    <li><a href="http://d642zevj.template.caihongjianzhan.com/xinwenzixun.html"
-                                            class="subtitle">新闻动态</a></li>
-                                    <li><a href="http://d642zevj.template.caihongjianzhan.com/chanpinzhanshi.html"
-                                            class="subtitle">产品服务</a></li>
-                                    <li><a href="http://d642zevj.template.caihongjianzhan.com/guanyuwomen.html"
-                                            class="subtitle">关于我们</a></li>
-                                    <li><a href="http://d642zevj.template.caihongjianzhan.com/lianxiwomen.html"
-                                            class="subtitle">联系我们</a></li>
-                                </ul>
-                            </div>
+                        <div class="column is-4" style="width: 50%;">
+                            <table>
+                                <tr>
+                                    <td rowspan = "2">
+                                        <div class="column">
+                                            <img src="./image/scaner.png" alt="scan" class="scan-img">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="column">
+                                            <li class="subtitle">地址：北京市朝阳区东三环中路5号财富金融中心20层(邮编100020)</li>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="column">
+                                            <li class="subtitle">电话：+86 10 8560 6888</li>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -179,13 +484,125 @@
         </div>
         <div class="copyright">
             <span>©
-                <script>document.write(new Date().getFullYear())</script>2023
-            </span> <span dynamic-var="config['公共']['公司名称']">互联网服务</span> <span>版权所有</span> <a
-                style="display: none;" href="http://beian.miit.gov.cn/"
-                dynamic-var="config['公共']['备案号']" class="beian-num"></a>
+                <script>document.write(new Date().getFullYear())</script>
+            </span>
+            <span dynamic-var="config['公共']['公司名称']">互联网服务</span>
+            <span>版权所有</span>
+            <a style="display: none;" href="http://beian.miit.gov.cn/" dynamic-var="config['公共']['备案号']" class="beian-num"></a>
         </div>
-
         <div component="online_1.html">
+            <style type="text/less">
+                #online_1 {
+                    /*使用组件将 --position 的值改为 fixed*/
+                    --position: fixed;
+                    .online-show {
+                        position: var(--position);
+                        right: 0;
+                        top: calc(50% - 74px);
+                        z-index: 1001;
+                        background-color: #3273dc;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 26px;
+                        padding: 1px;
+                        border-top-left-radius: 1px;
+                        border-bottom-left-radius: 1px;
+                        transition: right 500ms;
+                        p {
+                            text-indent: 0;
+                            font-size: 14px;
+                            line-height: 1.5;
+                            padding: 1px 0;
+                            max-width: 100%;
+                            word-break: break-word;
+                            text-transform: uppercase;
+                            text-align: center;
+                        }
+                    }
+                    .online-content {
+                        position: var(--position);
+                        top: calc(50% - 74px);
+                        z-index: 1000;
+                        right: -100vw;
+                        transition: right 500ms; 
+                        .box{
+                            padding: 1px * 2;
+                            border: 2px solid #3273dc;
+                            .content {
+                                p {
+                                    text-indent: 0;
+                                    margin: 0;
+                                    font-size: 14px;
+                                    &.is-flex {
+                                        align-items: center;
+                                    }
+                                }
+                                p:not(:last-child) {
+                                    padding-bottom: 1px;
+                                }
+                                .icon {
+                                    width: auto;
+                                }
+                            }
+                        }
+                    }
+                    .online-mobile {
+                        position: var(--position);
+                        right: 0;
+                        bottom: 50px;
+                        z-index: 999;
+                        .content {
+                            display: flex;
+                            flex-direction: column;
+                            i {
+                                width: 40px;
+                                height: 40px;
+                                line-height: 40px;
+                                text-align: center;
+                                font-size: 20px;
+                                background: rgba(31, 31, 31, 0.65);
+                                color: #fff;
+                                border-radius: 50%;
+                                margin: 1px 1px 0 0;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .wechat-num-copy-modal {
+                        .modal-content {
+                            background: rgb(255, 255, 255);
+                            width: 238px;
+                            padding-top: 20px;
+                            text-align: center;
+                            img {
+                                margin-bottom: 10px;
+                            }
+                            .title {
+                                font-size: 14px;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            .subtitle {
+                                color: rgb(153, 153, 153);
+                                font-size: 12px;
+                                line-height: 17px;
+                                margin-top: 3px;
+                                padding-bottom: 0;
+                                margin-bottom: 0;
+                            }
+                            .is-ok {
+                                color: rgb(51, 132, 227);
+                                padding: 9px 0px;
+                                margin: 12px 12px 0px;
+                                border-top: 1px solid rgb(236, 236, 236);
+                            }
+                        }
+
+                    }
+                }
+            </style>
 
             <div id="online_1">
                 <div class="online-show is-hidden-mobile">
@@ -201,6 +618,7 @@
                             <article class="media">
                                 <div class="media-content">
                                     <div class="content">
+                                        <!-- <div><a class="delete"></a></div> -->
                                         <p><span><i class="fa fa-phone"></i>&nbsp;&nbsp;电话：</span><span>400-888-8888</span>
                                         </p>
                                         <p><span><i class="fa fa-mobile"></i>&nbsp;&nbsp;&nbsp;手机：</span><span>13888888888</span>
@@ -209,6 +627,7 @@
                                         </p>
                                         <p><span><i class="fa fa-weixin"></i>&nbsp;微信：</span><span>13888888888</span>
                                         </p>
+
                                     </div>
                                 </div>
                             </article>
@@ -220,9 +639,79 @@
                             <a href="javascript:wechatNumCopy('13888888888')"><i class="fa fa-weixin"></i></a>
                         </div>
                     </div>
+                    <div class="modal modal-fx-fadeInScale wechat-num-copy-modal">
+                        <div class="modal-background"
+                            onclick="$('.wechat-num-copy-modal').toggleClass('is-active')"></div>
+                        <div class="modal-content">
+                            <img src="./image/share-finish-ok.svg" alt="" loading="lazy">
+                            <div class="title">微信号已复制</div>
+                            <div class="is-ok"
+                                onclick="$('.wechat-num-copy-modal').toggleClass('is-active')">OK
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
+            <script>
+                var online_selector = '#online_1';
+                $(online_selector + ' .online-show').on('mouseenter', function () {
+                    $(this).css('right', '-100vw');
+                    $(online_selector + ' .online-content').css('right', '0');
+                });
+                $(online_selector + ' .online-content').on('mouseleave', function () {
+                    $(this).css('right', '-100vw');
+                    $(online_selector + ' .online-show').css('right', '0');
+                });
+
+                // 复制链接
+                function copyFn(value) {
+                    var isRTL = document.documentElement.getAttribute('dir') === 'rtl';
+                    var input = document.createElement('textarea');
+                    input.style.fontSize = '12pt';
+                    // Reset box model
+                    input.style.border = '0';
+                    input.style.padding = '0';
+                    input.style.margin = '0';
+                    input.style.position = 'absolute';
+                    input.style[isRTL ? 'right' : 'left'] = '-9999px';
+                    var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+                    input.style.top = yPosition + 'px';
+
+                    input.setAttribute('readonly', '');
+                    input.value = value;
+                    document.body.appendChild(input);
+                    input.select();
+                    input.setSelectionRange(0, input.value.length);
+                    if (document.execCommand) {
+                        document.execCommand('copy');
+                    }
+                }
+
+                // 复制链接
+                function wechatNumCopy(num) {
+                    copyFn(num);
+                    $(online_selector + ' .wechat-num-copy-modal').toggleClass('is-active');
+                }
+            </script>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+        <script>
+            // 异步加载图片
+            $('img[data-src]').lazyload();
+
+            // 存在备案号时才显示备案号
+            if ($('.beian-num').text().trim()) {
+                $('.beian-num').show();
+            }
+
+            // animate
+            if (window.scrollY < 100) { // 解决网页滚动到指定位置时会出现页面错乱
+                ScrollReveal().reveal('.section', { distance: '150%', origin: 'bottom', opacity: null });
+            }
+        </script>
+        <script type="text/javascript" src="./script/customer.js"></script>
     </div>
 </body>
 </html>
