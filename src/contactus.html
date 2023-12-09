@@ -1,35 +1,1215 @@
 <!DOCTYPE html>
-<html>
-<header>
-    <meta charset="utf-8">
+<html class="sr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>联系我们 - 上海星盟律师事务所</title>
-    <meta name="keywords" content="星盟,律所,联系方式">
-    <meta name="description" content="上海星盟律师事务所联系方式">
-    <link href="./css/root.css" type="text/css" rel="stylesheet" />
-    <script src="./script/body"></script>
-</header>
+    <title>事务所介绍 - 上海星盟律师事务所</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./css/header2.css">  
+</head>
 
 <body>
-    <div class="header containerheader">
-        <div class="level1 ">
-            <div class="level1-left">
-                <a href="./index.html" class="level1-left-link">
-                    <img src="./image/logo.png" alt="logo" class="logo-img">
-                </a>
+    <div component="header.html">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.5/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-modal-fx@1.1.1/dist/css/modal-fx.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+        <script src="./script/push.js"></script>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
+        <style type="text/less" id="commom-style">
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';;
+            }
+            p {
+                text-align: left;
+                text-indent: 2em;
+                font-size: 16px;
+                line-height: 1.8;
+            }
+        
+            .section {
+                padding: 3rem 1.5rem 0 1.5rem;
+                @media (max-width: 768px) {
+                    padding: 2rem 0.5rem 0 0.5rem;    
+                }
+            }
+            .input:active, .input:focus, .is-active.input, .is-active.textarea, .is-focused.input, .is-focused.textarea, .select select.is-active, .select select.is-focused, .select select:active, .select select:focus, .textarea:active, .textarea:focus {
+                border-color: #3273dc;
+            }
+            .button.is-primary {
+                background-color: #3273dc;
+                .is-hovered, &:hover {
+                    background-color: #3273dc
+                }
+            }
+            .pagination-link.is-current {
+                background-color: #3273dc;
+                border-color: #3273dc;
+            }
+            .navbar-dropdown {
+                background: #000;
+                border-top-color: #000;
+            }
+        
+            .title {
+                font-size: 14px + 4px;
+                margin-bottom: 1px * 2;
+                @media (max-width: 768px) {
+                    font-size: 14px + 2px;
+                }
+            }
+            .subtitle {
+                font-size: 14px + 2px;
+                margin-bottom: 1px * 2;
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+            .intro {
+                font-size: 14px;
+                line-height: 2;
+                margin-bottom: 1px * 2;
+                @media (max-width: 768px) {
+                    font-size: 14px - 2px;
+                }
+            }
+        
+            .swiper-pagination-bullet-active {
+                background: #3273dc;
+            }
+        
+            .title-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 0 3rem 0;
+                @media (max-width: 768px) {
+                    margin: 0 0 2rem 0;
+                }
+            }
+            a.more {
+                color: black;
+            }
+            .title-block-1 {
+                .title {
+                    font-size: 20px;
+                    text-align: left;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #3273dc;
+                    margin: 0 auto;
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                    }
+                }
+                .subtitle {
+                    line-height: 1.5;
+                    margin: 0 auto;
+                    color: #4c4c4c;
+                    text-align: left;
+                    color: rgba(0, 0, 0, 0.45);
+                    font-family: Arial;
+                    font-size: 16px;
+                    @media (max-width: 768px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+            @media (max-width: 768px){
+                .columns{
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        </style>
+
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bulma-modal-fx@1.1.1/dist/js/modal-fx.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/holderjs@2.9.7/holder.min.js"></script>
+        <style type="text/less">
+            #header_1 {
+                .level {
+                    .level-left {
+                        .level-item img {
+                            max-height: 5rem;
+                        }
+                    }
+                    .level-right {
+                        .level-item p {
+                            text-align: right;
+                            span:last-child {
+                                color: black;
+                                font-size: 12px;
+                            }
+                            span:first-child {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+                .navbar {
+                    @media (min-width: 1024px) {
+                        background: black;
+                    }
+                }
+                .navbar-start{ 
+                    width:100%; 
+                    @media (min-width: 1024px) {
+                        .navbar-item { 
+                            flex: 1; 
+                            justify-content: center; 
+                        }
+                    }
+                }
+                
+                .navbar-menu {
+                    @media (max-width: 1024px) {
+                        background: black;
+                        padding: 0;
+                    }
+                }
+                .navbar-brand {
+                    align-items: center;
+                    img {
+                        max-height: 2.75rem;
+                    }
+                }
+                .navbar-burger{
+                    color: #3273dc;
+                    &:hover {
+                        color: #3273dc;
+                    }
+                }
+                .navbar-item:not(.has-dropdown), .navbar-link {
+                    color: #fff;
+                    @media (min-width: 1024px) {
+                        /* padding: 0.5rem 6.3rem; */
+                        background: black;
+                    }
+                }
+                .navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover {
+                    background: #3273dc;
+                    color: #fff;
+                }
+                .navbar-link.is-active:not(:focus):not(:hover), a.navbar-item.is-active:not(:focus):not(:hover) {
+                    background: #3273dc;
+                }
+                .is-primary-color {
+                    color: #3273dc;
+                }
+                .is-primary-bg {
+                    background: black;
+                }
+
+                .padding-ud-3 {
+                    padding: 30px 0;
+                }
+
+                .font-size-16 {
+                    font-size: 16px;
+                }
+
+                .i-mobile-style {
+                    font-size: 49px;
+                    padding: 0 8px;
+                }
+                .logo-img {
+                    max-height: 57px;
+                }
+            }
+            .navbar-link:not(.is-arrowless)::after{
+                border-color: #fff;
+            }
+            .stuck {
+                position:fixed;
+                width: 100%;
+                top:0;
+                z-index: 100;
+                background: #fff;
+                box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+            }
+        </style>
+        <header id="header_1">
+            <div class="container is-hidden-mobile">
+                <div class="level padding-ud-3">
+                    <div class="level-left">
+                        <a href="index.html" class="level-item">
+                            <img src="./image/logo.png" alt="logo" class="logo-img" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="level-right is-primary-color">
+                        <div class="level-item font-size-16">
+                            <p>
+                                <span>超越传统，塑造卓越</span> <br>
+                                <span>TRANSCEND TRADITION AND SHAPE EXCELLENCE</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="level-right">
-                <div class="level-item font-size-16">
-                    <p>
-                        <span>通过互联网服务提升人类生活品质！</span> <br>
-                        <span>NTERNET SERVICES TO ENHANCE THE QUALITY OF HUMAN LIFE !</span>
-                    </p>
+
+            <div component="menus.js">
+
+                <div class="is-primary-bg">
+                    <div class="container">
+                        <nav class="navbar">
+                            <div class="navbar-brand is-hidden-tablet">
+                                <a class="navbar-item" href="index.html">
+                                    <img src="./image/logo.png" loading="lazy">
+                                </a>
+                                <a class="navbar-burger burger" data-target="navbarDetail">
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                </a>
+                            </div>
+
+                            <div id="navbarDetail" class="navbar-menu">
+                                <div class="navbar-start">
+                                    <a class="navbar-item " href="index.html">首页</a>
+                                    <a class="navbar-item " href="brief.html">事务所介绍</a>
+                                    <a class="navbar-item " href="introduction.html">律师介绍</a>
+                                    <a class="navbar-item " href="services.html">服务领域</a>
+                                    <a class="navbar-item is-active" href="contactus.html">联系我们</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll(
+                    '.navbar-burger'), 0);
+
+                // Check if there are any navbar burgers
+                if ($navbarBurgers.length > 0) {
+
+                    // Add a click event on each of them
+                    $navbarBurgers.forEach(el => {
+                        el.addEventListener('click', () => {
+
+                            // Get the target from the "data-target" attribute
+                            const target = el.dataset.target;
+                            const $target = document.getElementById(target);
+
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            el.classList.toggle('is-active');
+                            $target.classList.toggle('is-active');
+
+                        });
+                    });
+                }
+            });
+
+            if (window.innerWidth < 768) {
+                var sticky = new Waypoint.Sticky({
+                    element: $('#header_1')[0]
+                })
+            }
+        </script>
+    </div>
+    <!-- banner图 -->
+    <div>
+        <style type="text/less">
+            .banner {
+                height: 300px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                @media (max-width: 768px) {
+                    height: 200px;
+                    background-position: 72% center;
+                }
+                .title {
+                    color: white;
+                    font-size: 40px;
+                    @media (max-width: 768px) {
+                        font-size: 20px;
+                    }
+                }
+                .subtitle {
+                    color: white;
+                    font-size: 25px;
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        </style>
+        <a class="banner" href="#" style="background-image: url(./image/banner.png);
+        background-position: center;background-size: 100% 100%;  ">
+
+        </a>
+    </div>
+
+    <div component="contact.html">
+        <style type="text/less">
+            #lianxiwomen {
+                .button {
+                    color: 235ad9;
+                }
+                #liuyan_form {
+                    padding-top: 20px;
+                    .title {
+                        text-align: center;
+                    }
+                }
+            }
+
+        </style>
+        <div id="lianxiwomen" class="section" style="visibility: visible;">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-6">
+                        <div class="container">
+                            <h1 class="title">联系我们</h1>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td> 电话：18813838438</td>
+                                    </tr>
+                                    <tr>
+                                        <td>邮箱：admin@xingmenglaw.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>传真：0756-1XXXXXX</td>
+                                    </tr>
+                                    <tr>
+                                        <td>地址：上海市长宁区延安西路728号10楼G座</td>
+                                    </tr>
+                                </table>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+
+                        <div component="baidu_map.js" data="{}">
+
+                            <div>
+                                <style>
+                                    #m-baidu-map {
+                                        height: 350px;
+                                    }
+
+                                    .m-map-detail-box h2 {
+                                        margin: 0 0 7px 0;
+                                        padding: 0;
+                                    }
+
+                                    .m-map-detail-box img {
+                                        float: right;
+                                        margin: 0px 0px 0px 4px;
+                                        width: 120px;
+                                        height: 80px;
+                                    }
+                                </style>
+                                <script src="./联系我们_files/api"></script>
+                                <script type="text/javascript" src="./联系我们_files/getscript"></script>
+                                <div id="m-baidu-map"
+                                    style="overflow: hidden; position: relative; z-index: 0; background-color: rgb(243, 241, 236); color: rgb(0, 0, 0); text-align: left;">
+                                    <div
+                                        style="overflow: visible; position: absolute; z-index: 0; left: 0px; top: 0px; cursor: url(&quot;http://api.map.baidu.com/images/openhand.cur&quot;) 8 8, default;">
+                                        <div class="BMap_mask"
+                                            style="position: absolute; left: 0px; top: 0px; z-index: 9; overflow: hidden; user-select: none; width: 660px; height: 350px;">
+                                        </div>
+                                        <div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;">
+                                            <div
+                                                style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 800;">
+                                                <div class="BMap_pop"
+                                                    style="box-sizing: content-box; position: absolute; cursor: default; left: 138px; top: 48px;">
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 0px; top: 0px; width: 25px; height: 25px;">
+                                                        <div
+                                                            style="box-sizing:content-box;background:#fff;border-top:1px solid #ababab;border-left:1px solid #ababab;width:30px;height:30px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="BMap_top"
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 25px; top: 0px; width: 367px; height: 25px;">
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 392px; top: 0px; width: 25px; height: 25px;">
+                                                        <div
+                                                            style="box-sizing:content-box;position:absolute;top:0;left:-6px;background:#fff;border-top:1px solid #ababab;border-right:1px solid #ababab;width:30px;height:30px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="BMap_center"
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 0px; top: 25px; width: 415px; height: 53px;">
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 0px; top: 78px; width: 25px; height: 25px;">
+                                                        <div
+                                                            style="box-sizing:content-box;position:absolute;top:-6px;left:0;background:#fff;border-bottom:1px solid #ababab;border-left:1px solid #ababab;width:30px;height:30px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="BMap_bottom"
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 25px; top: 78px; width: 367px; height: 24px;">
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 392px; top: 78px; width: 25px; height: 25px;">
+                                                        <div
+                                                            style="box-sizing:content-box;position:absolute;top:-6px;left:-6px;background:#fff;border-right:1px solid #ababab;border-bottom:1px solid #ababab;width:30px;height:30px;">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 192px; top: 78px; width: 34px; height: 50px;">
+                                                        <img style="box-sizing:content-box;border:none;margin:0px;padding:0px;margin-left:-186px;margin-top:-691px;max-width:none; width:690px;height:786px;"
+                                                            src="./联系我们_files/iw3.png">
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; width: 385px; height: 71px; position: absolute; left: 16px; top: 16px; z-index: 10; overflow: hidden;">
+                                                        <div class="BMap_bubble_title"
+                                                            style="display: none; overflow: hidden; height: auto; line-height: 24px; white-space: nowrap; width: auto;">
+                                                        </div>
+                                                        <div class="BMap_bubble_content" style="width: auto; height: auto;">
+                                                            <p title="互联网服务"
+                                                                style="width:300px;display:block;font:bold 14px/16px arial,simsun,sans-serif;margin-bottom:5px;color:#cc5522;white-space:nowrap;overflow:hidden">
+                                                                互联网服务</p>
+                                                            <p
+                                                                style="padding-right:10px;width:100%;word-break: break-all;font-size: 14px;">
+                                                                地址：广东省深圳市龙华新区横琴工业区1栋A座位306室</p>
+                                                            <p
+                                                                style="padding-right:10px;width:220px;word-break: break-all;font-size: 14px;">
+                                                                电话：13888888888</p>
+                                                        </div>
+                                                        <div class="BMap_bubble_max_content" style="display:none;position:relative">
+                                                        </div>
+                                                    </div><img
+                                                        style="position: absolute; top: 12px; width: 10px; height: 10px; cursor: pointer; z-index: 10000; left: 392px;"
+                                                        src="./联系我们_files/iw_close1d3.gif"><img
+                                                        style="position:absolute;top:12px;width:10px;height:10px;-moz-user-select:none;cursor:pointer;z-index:10000;display:none"
+                                                        src="./联系我们_files/quanjing.png" title="进入全景"><img
+                                                        style="position:absolute;top:10px;width:9px;height:14px;-moz-user-select:none;cursor:pointer;z-index:10000;display:none;"
+                                                        src="./联系我们_files/phone.png" title="发送到手机"><img
+                                                        style="position: absolute; top: 12px; width: 10px; height: 10px; cursor: pointer; z-index: 10000; display: none; left: 372px;"
+                                                        src="./联系我们_files/iw_plus1d3.gif">
+                                                    <div style="position: absolute; top: 0px; left: 0px; z-index: 10000; width: 417px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;">
+                                                <span class="BMap_Marker BMap_noprint" unselectable="on" "="" style=" position:
+                                                    absolute; padding: 0px; margin: 0px; border: 0px; cursor: pointer; background:
+                                                    url(&quot;http://api.map.baidu.com/images/blank.gif&quot;); width: 19px; height:
+                                                    25px; left: 320px; top: 150px; z-index: 13471210; user-select: none;"
+                                                    title=""></span><span class="BMap_Marker BMap_noprint"
+                                                    unselectable="on" "="" style=" position: absolute; padding: 0px; margin: 0px;
+                                                    border: 0px; cursor: pointer; background:
+                                                    url(&quot;http://api.map.baidu.com/images/blank.gif&quot;); width: 19px; height:
+                                                    25px; left: 320px; top: 150px; z-index: 13471210; user-select: none;"
+                                                    title=""></span><span class="BMap_Marker BMap_noprint"
+                                                    unselectable="on" "="" style=" position: absolute; padding: 0px; margin: 0px;
+                                                    border: 0px; cursor: pointer; background:
+                                                    url(&quot;http://api.map.baidu.com/images/blank.gif&quot;); width: 1px; height: 1px;
+                                                    left: 330px; top: 175px; z-index: 13471210; user-select: none;"
+                                                    title=""></span><span class="BMap_Marker BMap_noprint"
+                                                    unselectable="on" "="" style=" position: absolute; padding: 0px; margin: 0px;
+                                                    border: 0px; cursor: pointer; background:
+                                                    url(&quot;http://api.map.baidu.com/images/blank.gif&quot;); width: 19px; height:
+                                                    25px; left: 320px; top: 150px; z-index: 13471210; user-select: none;"
+                                                    title=""></span><span class="BMap_Marker BMap_noprint"
+                                                    unselectable="on" "="" style=" position: absolute; padding: 0px; margin: 0px;
+                                                    border: 0px; cursor: pointer; background:
+                                                    url(&quot;http://api.map.baidu.com/images/blank.gif&quot;); width: 19px; height:
+                                                    25px; left: 320px; top: 150px; z-index: 13471210; user-select: none;"
+                                                    title=""></span><span class="BMap_Marker BMap_noprint"
+                                                    unselectable="on" "="" style=" position: absolute; padding: 0px; margin: 0px;
+                                                    border: 0px; cursor: pointer; background:
+                                                    url(&quot;http://api.map.baidu.com/images/blank.gif&quot;); width: 18px; height:
+                                                    18px; left: 95px; top: 50px; z-index: 37000000; user-select: none; display: none;"
+                                                    title=""></span>
+                                            </div>
+                                            <div
+                                                style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600;">
+                                                <div class="BMap_shadow" style="position: absolute; left: 116px; top: 100px;"
+                                                    type="infowindow_shadow">
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 44px; top: 0px; width: 70px; height: 30px;">
+                                                        <img onmousedown="return false" style="margin-left: -323px; margin-top: 0px;"
+                                                            src="./联系我们_files/iws3.png">
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 114px; top: 0px; width: 329px; height: 30px;">
+                                                        <img onmousedown="return false" style="margin-left: -393px; margin-top: 0px;"
+                                                            src="./联系我们_files/iws3.png">
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 443px; top: 0px; width: 70px; height: 30px;">
+                                                        <img onmousedown="return false" style="margin-left: -1033px; margin-top: 0px;"
+                                                            src="./联系我们_files/iws3.png">
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 29px; top: 30px; width: 85px; height: 15px;">
+                                                        <img onmousedown="return false" style="margin-top: -30px; margin-left: -308px;"
+                                                            src="./联系我们_files/iws3.png">
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 114px; top: 30px; width: 343px; height: 15px;">
+                                                        <img onmousedown="return false" style="margin-left: -360px; margin-top: -30px;"
+                                                            src="./联系我们_files/iws3.png">
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 457px; top: 30px; width: 85px; height: 15px;">
+                                                        <img onmousedown="return false" style="margin-top: -30px; margin-left: -1048px;"
+                                                            src="./联系我们_files/iws3.png">
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 0px; top: 45px; width: 50px; height: 60px;">
+                                                        <img onmousedown="return false" style="margin-left: -14px; margin-top: -310px;"
+                                                            src="./联系我们_files/iws3.png">
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 50px; top: 45px; width: 94px; height: 60px;">
+                                                        <img onmousedown="return false" style="margin-left: -255px; margin-top: -310px;"
+                                                            src="./联系我们_files/iws3.png">
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 144px; top: 45px; width: 140px; height: 60px;">
+                                                        <img onmousedown="return false" style="margin-left: -440px; margin-top: -310px;"
+                                                            src="./联系我们_files/iws3.png">
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 284px; top: 45px; width: 144px; height: 60px;">
+                                                        <img onmousedown="return false" style="margin-left: -255px; margin-top: -310px;"
+                                                            src="./联系我们_files/iws3.png">
+                                                    </div>
+                                                    <div
+                                                        style="box-sizing: content-box; overflow: hidden; z-index: 1; position: absolute; left: 428px; top: 45px; width: 70px; height: 60px;">
+                                                        <img onmousedown="return false" style="margin-left: -754px; margin-top: -310px;"
+                                                            src="./联系我们_files/iws3.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500;">
+                                                <label class="BMapLabel" unselectable="on"
+                                                    style="position: absolute; display: none; cursor: inherit; background-color: rgb(190, 190, 190); border: 1px solid rgb(190, 190, 190); padding: 1px; white-space: nowrap; font: 12px arial, sans-serif; z-index: -20000; color: rgb(190, 190, 190);">shadow</label><label
+                                                    class="BMapLabel" unselectable="on"
+                                                    style="position: absolute; display: none; cursor: inherit; background-color: rgb(255, 255, 225); border: 1px solid rgb(140, 140, 140); padding: 1px; white-space: nowrap; font: 12px arial, sans-serif; z-index: 80; user-select: none; color: rgb(77, 77, 77);">点击可查看详情</label>
+                                            </div>
+                                            <div
+                                                style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400;">
+                                                <span class="BMap_Marker" unselectable="on"
+                                                    style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 320px; top: 150px; z-index: 13471210;">
+                                                    <div
+                                                        style="position: absolute; margin: 0px; padding: 0px; width: 19px; height: 25px; overflow: hidden;">
+                                                        <img src="./联系我们_files/marker_red_sprite.png"
+                                                            style="display: block; border:none;margin-left:0px; margin-top:0px; ">
+                                                    </div>
+                                                </span><span class="BMap_Marker" unselectable="on"
+                                                    style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 320px; top: 150px; z-index: 13471210;">
+                                                    <div
+                                                        style="position: absolute; margin: 0px; padding: 0px; width: 19px; height: 25px; overflow: hidden;">
+                                                        <img src="./联系我们_files/marker_red_sprite.png"
+                                                            style="display: block; border:none;margin-left:0px; margin-top:0px; ">
+                                                    </div>
+                                                </span><span class="BMap_Marker" unselectable="on"
+                                                    style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 330px; top: 175px; z-index: 13471210;">
+                                                    <div
+                                                        style="position: absolute; margin: 0px; padding: 0px; width: 1px; height: 1px; overflow: hidden;">
+                                                        <img src="./联系我们_files/blank.gif"
+                                                            style="display: block; border:none;margin-left:0px; margin-top:0px; ">
+                                                    </div>
+                                                </span><span class="BMap_Marker" unselectable="on"
+                                                    style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 320px; top: 150px; z-index: 13471210;">
+                                                    <div
+                                                        style="position: absolute; margin: 0px; padding: 0px; width: 19px; height: 25px; overflow: hidden;">
+                                                        <img src="./联系我们_files/marker_red_sprite.png"
+                                                            style="display: block; border:none;margin-left:0px; margin-top:0px; ">
+                                                    </div>
+                                                </span><span class="BMap_Marker" unselectable="on"
+                                                    style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 320px; top: 150px; z-index: 13471210;">
+                                                    <div
+                                                        style="position: absolute; margin: 0px; padding: 0px; width: 19px; height: 25px; overflow: hidden;">
+                                                        <img src="./联系我们_files/marker_red_sprite.png"
+                                                            style="display: block; border:none;margin-left:0px; margin-top:0px; ">
+                                                    </div>
+                                                </span><span class="BMap_Marker" unselectable="on"
+                                                    style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 95px; top: 50px; z-index: 37000000; display: none;">
+                                                    <div
+                                                        style="position: absolute; margin: 0px; padding: 0px; width: 18px; height: 18px; overflow: hidden;">
+                                                        <img src="./联系我们_files/spotmkrs.png"
+                                                            style="display: block; border:none;margin-left:-166px; margin-top:0px; ">
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <div
+                                                style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 300;">
+                                                <span unselectable="on"
+                                                    style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 20px; height: 11px; left: 324px; top: 164px;">
+                                                    <div
+                                                        style="position: absolute; margin: 0px; padding: 0px; width: 20px; height: 11px; overflow: hidden;">
+                                                        <img src="./联系我们_files/marker_red_sprite.png"
+                                                            style="display: block; border:none;margin-left:-19px; margin-top:-13px; ">
+                                                    </div>
+                                                </span><span unselectable="on"
+                                                    style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 20px; height: 11px; left: 324px; top: 164px;">
+                                                    <div
+                                                        style="position: absolute; margin: 0px; padding: 0px; width: 20px; height: 11px; overflow: hidden;">
+                                                        <img src="./联系我们_files/marker_red_sprite.png"
+                                                            style="display: block; border:none;margin-left:-19px; margin-top:-13px; ">
+                                                    </div>
+                                                </span><span unselectable="on"
+                                                    style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 20px; height: 11px; left: 324px; top: 164px;">
+                                                    <div
+                                                        style="position: absolute; margin: 0px; padding: 0px; width: 20px; height: 11px; overflow: hidden;">
+                                                        <img src="./联系我们_files/marker_red_sprite.png"
+                                                            style="display: block; border:none;margin-left:-19px; margin-top:-13px; ">
+                                                    </div>
+                                                </span><span unselectable="on"
+                                                    style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 20px; height: 11px; left: 324px; top: 164px;">
+                                                    <div
+                                                        style="position: absolute; margin: 0px; padding: 0px; width: 20px; height: 11px; overflow: hidden;">
+                                                        <img src="./联系我们_files/marker_red_sprite.png"
+                                                            style="display: block; border:none;margin-left:-19px; margin-top:-13px; ">
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <div
+                                                style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 201;">
+                                            </div>
+                                            <div
+                                                style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;">
+                                            </div>
+                                        </div>
+                                        <div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 1;">
+                                            <div
+                                                style="position: absolute; overflow: visible; z-index: -100; left: 330px; top: 175px; display: block; transform: translate3d(0px, 0px, 0px);">
+                                                <img src="./联系我们_files/saved_resource"
+                                                    style="position: absolute; border: none; width: 256px; height: 256px; left: -228px; top: -251px; max-width: none; opacity: 1;"><img
+                                                    src="./联系我们_files/saved_resource(1)"
+                                                    style="position: absolute; border: none; width: 256px; height: 256px; left: -484px; top: -251px; max-width: none; opacity: 1;"><img
+                                                    src="./联系我们_files/saved_resource(2)"
+                                                    style="position: absolute; border: none; width: 256px; height: 256px; left: 28px; top: -251px; max-width: none; opacity: 1;"><img
+                                                    src="./联系我们_files/saved_resource(3)"
+                                                    style="position: absolute; border: none; width: 256px; height: 256px; left: -228px; top: 5px; max-width: none; opacity: 1;"><img
+                                                    src="./联系我们_files/saved_resource(4)"
+                                                    style="position: absolute; border: none; width: 256px; height: 256px; left: -740px; top: -251px; max-width: none; opacity: 1;"><img
+                                                    src="./联系我们_files/saved_resource(5)"
+                                                    style="position: absolute; border: none; width: 256px; height: 256px; left: 284px; top: -251px; max-width: none; opacity: 1;"><img
+                                                    src="./联系我们_files/saved_resource(6)"
+                                                    style="position: absolute; border: none; width: 256px; height: 256px; left: -484px; top: 5px; max-width: none; opacity: 1;"><img
+                                                    src="./联系我们_files/saved_resource(7)"
+                                                    style="position: absolute; border: none; width: 256px; height: 256px; left: 28px; top: 5px; max-width: none; opacity: 1;"><img
+                                                    src="./联系我们_files/saved_resource(8)"
+                                                    style="position: absolute; border: none; width: 256px; height: 256px; left: 540px; top: -251px; max-width: none; opacity: 1;"><img
+                                                    src="./联系我们_files/saved_resource(9)"
+                                                    style="position: absolute; border: none; width: 256px; height: 256px; left: -740px; top: 5px; max-width: none; opacity: 1;"><img
+                                                    src="./联系我们_files/saved_resource(10)"
+                                                    style="position: absolute; border: none; width: 256px; height: 256px; left: 284px; top: 5px; max-width: none; opacity: 1;"><img
+                                                    src="./联系我们_files/saved_resource(11)"
+                                                    style="position: absolute; border: none; width: 256px; height: 256px; left: 540px; top: 5px; max-width: none; opacity: 1;">
+                                            </div>
+                                        </div>
+                                        <div
+                                            style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 2; display: none;">
+                                            <div
+                                                style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 0; display: none;">
+                                            </div>
+                                        </div>
+                                        <div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 3;">
+                                        </div>
+                                    </div>
+                                    <div class="pano_close" title="退出全景" style="z-index: 1201; display: none;"></div><a
+                                        class="pano_pc_indoor_exit" title="退出室内景" style="z-index: 1201; display: none;"><span
+                                            style="float:right;margin-right:12px;">出口</span></a>
+                                    <div id="zoomer"
+                                        style="position:absolute;z-index:0;top:0px;left:0px;overflow:hidden;visibility:hidden;cursor:url(http://api.map.baidu.com/images/openhand.cur) 8 8,default">
+                                        <div class="BMap_zoomer" style="top:0;left:0;"></div>
+                                        <div class="BMap_zoomer" style="top:0;right:0;"></div>
+                                        <div class="BMap_zoomer" style="bottom:0;left:0;"></div>
+                                        <div class="BMap_zoomer" style="bottom:0;right:0;"></div>
+                                    </div>
+                                    <div unselectable="on" class=" BMap_stdMpCtrl BMap_stdMpType0 BMap_noprint anchorTL"
+                                        style="width: 62px; height: 186px; inset: 10px auto auto 10px; position: absolute; z-index: 1100; text-size-adjust: none;">
+                                        <div class="BMap_stdMpPan">
+                                            <div class="BMap_button BMap_panN" title="向上平移"></div>
+                                            <div class="BMap_button BMap_panW" title="向左平移"></div>
+                                            <div class="BMap_button BMap_panE" title="向右平移"></div>
+                                            <div class="BMap_button BMap_panS" title="向下平移"></div>
+                                            <div class="BMap_stdMpPanBg BMap_smcbg"></div>
+                                        </div>
+                                        <div class="BMap_stdMpZoom" style="height: 141px; width: 62px;">
+                                            <div class="BMap_button BMap_stdMpZoomIn" title="放大一级"
+                                                style="background-position: 0px -221px;">
+                                                <div class="BMap_smcbg"></div>
+                                            </div>
+                                            <div class="BMap_button BMap_stdMpZoomOut" title="缩小一级" style="top: 120px;">
+                                                <div class="BMap_smcbg"></div>
+                                            </div>
+                                            <div class="BMap_stdMpSlider" style="height: 102px;">
+                                                <div class="BMap_stdMpSliderBgTop" style="height: 102px;">
+                                                    <div class="BMap_smcbg"></div>
+                                                </div>
+                                                <div class="BMap_stdMpSliderBgBot" style="top: 37px; height: 69px;"></div>
+                                                <div class="BMap_stdMpSliderMask" title="放置到此级别"></div>
+                                                <div class="BMap_stdMpSliderBar" title="拖动缩放"
+                                                    style="cursor: url(&quot;http://api.map.baidu.com/images/openhand.cur&quot;) 8 8, default; top: 37px;">
+                                                    <div class="BMap_smcbg"></div>
+                                                </div>
+                                            </div>
+                                            <div class="BMap_zlHolder">
+                                                <div class="BMap_zlSt">
+                                                    <div class="BMap_smcbg"></div>
+                                                </div>
+                                                <div class="BMap_zlCity">
+                                                    <div class="BMap_smcbg"></div>
+                                                </div>
+                                                <div class="BMap_zlProv">
+                                                    <div class="BMap_smcbg"></div>
+                                                </div>
+                                                <div class="BMap_zlCountry">
+                                                    <div class="BMap_smcbg"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="BMap_stdMpGeolocation"
+                                            style="position: initial; display: none; margin-top: 43px; margin-left: 10px;">
+                                            <div class="BMap_geolocationContainer"
+                                                style="position: initial; width: 24px; height: 24px; overflow: hidden; margin: 0px; box-sizing: border-box;">
+                                                <div class="BMap_geolocationIconBackground"
+                                                    style="width: 24px; height: 24px; background-image: url(http://api.map.baidu.com/images/navigation-control/geolocation-control/pc/bg-20x20.png); background-size: 20px 20px; background-position: 3px 3px; background-repeat: no-repeat;">
+                                                    <div class="BMap_geolocationIcon"
+                                                        style="position: initial; width: 24px; height: 24px; cursor: pointer; background-image: url(&#39;http://api.map.baidu.com/images/navigation-control/geolocation-control/pc/success-10x10.png&#39;); background-size: 10px 10px; background-repeat: no-repeat; background-position: center;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="baidu_jsapi_watermark" style="pointer-events: none !important; display: block !important">
+                                        <template shadowrootmode="closed">
+                                            <div id="baidu_jsapi_watermark_span00"
+                                                style="transform: rotate(-15deg); position: absolute; left: 120px; top: 20px; overflow: hidden; z-index: 9999999; opacity: 0.15; font-size: 18px; font-family: 微软雅黑; color: black; text-align: center; width: 200px; height: 50px; display: block;">
+                                                未获得百度地图商用授权</div>
+                                            <div id="baidu_jsapi_watermark_span01"
+                                                style="transform: rotate(-15deg); position: absolute; left: 360px; top: 20px; overflow: hidden; z-index: 9999999; opacity: 0.15; font-size: 18px; font-family: 微软雅黑; color: black; text-align: center; width: 200px; height: 50px; display: block;">
+                                                未获得百度地图商用授权</div>
+                                            <div id="baidu_jsapi_watermark_span10"
+                                                style="transform: rotate(-15deg); position: absolute; left: 120px; top: 110px; overflow: hidden; z-index: 9999999; opacity: 0.15; font-size: 18px; font-family: 微软雅黑; color: black; text-align: center; width: 200px; height: 50px; display: block;">
+                                                未获得百度地图商用授权</div>
+                                            <div id="baidu_jsapi_watermark_span11"
+                                                style="transform: rotate(-15deg); position: absolute; left: 360px; top: 110px; overflow: hidden; z-index: 9999999; opacity: 0.15; font-size: 18px; font-family: 微软雅黑; color: black; text-align: center; width: 200px; height: 50px; display: block;">
+                                                未获得百度地图商用授权</div>
+                                            <div id="baidu_jsapi_watermark_span20"
+                                                style="transform: rotate(-15deg); position: absolute; left: 120px; top: 200px; overflow: hidden; z-index: 9999999; opacity: 0.15; font-size: 18px; font-family: 微软雅黑; color: black; text-align: center; width: 200px; height: 50px; display: block;">
+                                                未获得百度地图商用授权</div>
+                                            <div id="baidu_jsapi_watermark_span21"
+                                                style="transform: rotate(-15deg); position: absolute; left: 360px; top: 200px; overflow: hidden; z-index: 9999999; opacity: 0.15; font-size: 18px; font-family: 微软雅黑; color: black; text-align: center; width: 200px; height: 50px; display: block;">
+                                                未获得百度地图商用授权</div>
+                                        </template></div>
+                                    <div class=" anchorBL"
+                                        style="height: 32px; position: absolute; z-index: 30; text-size-adjust: none; inset: auto auto 20px 1px;">
+                                        <a title="到百度地图查看此区域" target="_blank" href="http://map.baidu.com/?sr=1"
+                                            style="outline: none;"><img style="border:none;width:77px;height:32px"
+                                                src="./联系我们_files/copyright_logo.png"></a>
+                                    </div>
+                                    <div class=" BMap_noprint"
+                                        style="top: 50%; left: 50%; display: none; padding: 24px; overflow: visible; position: absolute; width: 50%; max-width: 360px; transform: translate(-50%, -100%); z-index: 9999; background: rgb(255, 255, 255); text-size-adjust: none;">
+                                        <div
+                                            style="position: relative; width: 100%; height: 100%; color: rgb(0, 0, 0); font-size: 14px;">
+                                        </div><span
+                                            style="margin-top: 12px; margin-bottom: -12px; margin-left: calc(100% - 48px); width: 56px; height: 32px; font-size: 14px; text-align: center; line-height: 32px; display: block; cursor: pointer; background: rgb(56, 148, 255); border: 1px solid rgba(63, 81, 181, 0.23); color: rgb(255, 255, 255); border-radius: 3px;">确定</span>
+                                    </div>
+                                    <div unselectable="on" class=" BMap_cpyCtrl BMap_noprint anchorBL"
+                                        style="cursor: default; white-space: nowrap; color: black; background: none; font: 11px / 15px arial, sans-serif; inset: auto auto 2px 2px; position: absolute; z-index: 10; text-size-adjust: none;">
+                                        <span _cid="1" style="display: inline;"><span
+                                                style="background: rgba(255, 255, 255, 0.701961);padding: 0px 1px;line-height: 16px;display: inline;height: 16px;">©&nbsp;2023
+                                                Baidu - GS(2021)6026号 - 甲测资字11111342 - 京ICP证030173号 - Data ©
+                                                百度智图</span></span>
+                                    </div>
+                                </div>
+                                <script type="text/javascript">
+                                    // 创建地图
+                                    var map = new BMap.Map("m-baidu-map");
+                                    // 创建需要显示信息框
+                                    var mapBoxShow =
+                                        '<p title="互联网服务" style="width:300px;display:block;font:bold 14px/16px arial,simsun,sans-serif;margin-bottom:5px;color:#cc5522;white-space:nowrap;overflow:hidden">互联网服务</p>' +
+                                        "<p style='padding-right:10px;width:100%;word-break: break-all;font-size: 14px;'>地址：广东省深圳市龙华新区横琴工业区1栋A座位306室</p>" +
+                                        "<p style='padding-right:10px;width:220px;word-break: break-all;font-size: 14px;'>电话：13888888888</p>" +
+                                        "" +
+                                        "</div>";
+                                    // 增加左侧控制条
+                                    map.addControl(new BMap.NavigationControl());
+
+
+                                    // 编写自定义函数,创建标注
+                                    function addMarker(point, content) {
+                                        // 创建标注
+                                        var marker = new BMap.Marker(point);
+                                        map.addOverlay(marker);
+                                        var infoWindow = new BMap.InfoWindow(content);
+                                        //开启信息窗口
+                                        map.openInfoWindow(infoWindow, point);
+                                        marker.addEventListener("click", function () {
+                                            this.openInfoWindow(infoWindow);
+                                            //图片加载完毕重绘infowindow
+                                            document.getElementById('imgDemo').onload = function () {
+                                                infoWindow.redraw();
+                                            }
+                                        });
+                                    }
+                                    var myLocalsearch = new BMap.LocalSearch(
+                                        map, {
+                                        onSearchComplete: function (results) {
+                                            var poi = results.getPoi(0);
+                                            map.centerAndZoom(poi.point, 13);
+                                            var user_marker = new BMap.Marker(poi.point);
+                                            map.addOverlay(user_marker);
+                                            addMarker(poi.point, mapBoxShow);
+                                        }
+                                    }
+                                    );
+                                    myLocalsearch.search('广东省深圳市龙华新区横琴工业区1栋A座位306室');
+                                </script>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div component="footer.html">
+        <style type="text/less">
+            #gongyongdibu {
+                background: #212121;
+                margin-top: 1px * 3;
+                .footer-intro {
+                    padding-bottom: 24px;
+                }
+                .title {
+                    color: white;
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                }
+                .subtitle {
+                    color: #bfbfbf;
+                    margin-bottom: 1px * 2;
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    img {
+                        margin-right: 1px;
+                    }
+                }
+                .intro {
+                    color: #bfbfbf;
+                    text-indent: 0;
+                    overflow:hidden; text-overflow:ellipsis; display:-webkit-box !important; -webkit-line-clamp:5; -webkit-box-orient:vertical;
+                }
+                hr {
+                    width: 3em;
+                    background-color: #3273dc;
+                }
+            }
+            .copyright {
+                text-align: center;
+                font-size: 16px;
+                line-height: 4;
+                color: white;
+                background: black;
+                a {
+                    color: white;
+                }
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                    margin-top: 1px * 2;
+                }
+            } 
+        </style>
+        <div id="gongyongdibu" class="is-hidden-mobile">
+            <div class="section" data-sr-id="2" style="visibility: visible; padding: 24px 24px;">
+                <div class="footer-intro container">
+                    <div class="columns">
+                        <div class="column is-4" style="width: 50%; padding-top: 40px;">
+                            <h1 class="title">星盟律师事务所</h1>
+                            <hr>
+                            <ul>
+                                <li class="subtitle">
+                                    星盟律师的专业服务范围覆盖民商事诉讼、刑事辩护、房地产法律服务、知识产权、政府与企业法律顾问、破产清算等诉讼与非诉板块领域。
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column is-4" style="width: 50%;">
+                            <table>
+                                <tr>
+                                    <td rowspan = "2">
+                                        <div class="column">
+                                            <img src="./image/scaner.png" alt="scan" class="scan-img">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="column">
+                                            <li class="subtitle">地址：上海市长宁区延安西路728号10楼G座</li>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="column">
+                                            <li class="subtitle"></li>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="copyright">
+            <span>©
+                <script>document.write(new Date().getFullYear())</script>
+            </span>
+            <span dynamic-var="config['公共']['公司名称']">互联网服务</span>
+            <span>版权所有</span>
+            <a style="display: none;" href="http://beian.miit.gov.cn/" dynamic-var="config['公共']['备案号']" class="beian-num"></a>
+        </div>
+        <div component="online_1.html">
+            <style type="text/less">
+                #online_1 {
+                    /*使用组件将 --position 的值改为 fixed*/
+                    --position: fixed;
+                    .online-show {
+                        position: var(--position);
+                        right: 0;
+                        top: calc(50% - 74px);
+                        z-index: 1001;
+                        background-color: #3273dc;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 26px;
+                        padding: 1px;
+                        border-top-left-radius: 1px;
+                        border-bottom-left-radius: 1px;
+                        transition: right 500ms;
+                        p {
+                            text-indent: 0;
+                            font-size: 14px;
+                            line-height: 1.5;
+                            padding: 1px 0;
+                            max-width: 100%;
+                            word-break: break-word;
+                            text-transform: uppercase;
+                            text-align: center;
+                        }
+                    }
+                    .online-content {
+                        position: var(--position);
+                        top: calc(50% - 74px);
+                        z-index: 1000;
+                        right: -100vw;
+                        transition: right 500ms; 
+                        .box{
+                            padding: 1px * 2;
+                            border: 2px solid #3273dc;
+                            .content {
+                                p {
+                                    text-indent: 0;
+                                    margin: 0;
+                                    font-size: 14px;
+                                    &.is-flex {
+                                        align-items: center;
+                                    }
+                                }
+                                p:not(:last-child) {
+                                    padding-bottom: 1px;
+                                }
+                                .icon {
+                                    width: auto;
+                                }
+                            }
+                        }
+                    }
+                    .online-mobile {
+                        position: var(--position);
+                        right: 0;
+                        bottom: 50px;
+                        z-index: 999;
+                        .content {
+                            display: flex;
+                            flex-direction: column;
+                            i {
+                                width: 40px;
+                                height: 40px;
+                                line-height: 40px;
+                                text-align: center;
+                                font-size: 20px;
+                                background: rgba(31, 31, 31, 0.65);
+                                color: #fff;
+                                border-radius: 50%;
+                                margin: 1px 1px 0 0;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .wechat-num-copy-modal {
+                        .modal-content {
+                            background: rgb(255, 255, 255);
+                            width: 238px;
+                            padding-top: 20px;
+                            text-align: center;
+                            img {
+                                margin-bottom: 10px;
+                            }
+                            .title {
+                                font-size: 14px;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            .subtitle {
+                                color: rgb(153, 153, 153);
+                                font-size: 12px;
+                                line-height: 17px;
+                                margin-top: 3px;
+                                padding-bottom: 0;
+                                margin-bottom: 0;
+                            }
+                            .is-ok {
+                                color: rgb(51, 132, 227);
+                                padding: 9px 0px;
+                                margin: 12px 12px 0px;
+                                border-top: 1px solid rgb(236, 236, 236);
+                            }
+                        }
+
+                    }
+                }
+            </style>
+<!--
+            <div id="online_1">
+                <div class="online-show is-hidden-mobile">
+                    <i class="fa fa-user"></i>
+                    <p>在线客服</p>
+                    <i class="fa fa-caret-left"></i>
+                </div>
+
+                <div component="1_online.js">
+
+                    <div class="online-content is-hidden-mobile">
+                        <div class=" box">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p><span><i class="fa fa-phone"></i>&nbsp;&nbsp;电话：</span><span>400-888-8888</span>
+                                        </p>
+                                        <p><span><i class="fa fa-mobile"></i>&nbsp;&nbsp;&nbsp;手机：</span><span>13888888888</span>
+                                        </p>
+                                        <p><span><i class="fa fa-envelope-o"></i>&nbsp;邮箱：</span><span>4008888888@qq.com</span>
+                                        </p>
+                                        <p><span><i class="fa fa-weixin"></i>&nbsp;微信：</span><span>13888888888</span>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="online-mobile is-hidden-tablet">
+                        <div class="content">
+                            <a href="tel:13888888888"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                            <a href="javascript:wechatNumCopy('13888888888')"><i class="fa fa-weixin"></i></a>
+                        </div>
+                    </div>
+                    <div class="modal modal-fx-fadeInScale wechat-num-copy-modal">
+                        <div class="modal-background"
+                            onclick="$('.wechat-num-copy-modal').toggleClass('is-active')"></div>
+                        <div class="modal-content">
+                            <img src="./image/share-finish-ok.svg" alt="" loading="lazy">
+                            <div class="title">微信号已复制</div>
+                            <div class="is-ok"
+                                onclick="$('.wechat-num-copy-modal').toggleClass('is-active')">OK
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <script>
+                var online_selector = '#online_1';
+                $(online_selector + ' .online-show').on('mouseenter', function () {
+                    $(this).css('right', '-100vw');
+                    $(online_selector + ' .online-content').css('right', '0');
+                });
+                $(online_selector + ' .online-content').on('mouseleave', function () {
+                    $(this).css('right', '-100vw');
+                    $(online_selector + ' .online-show').css('right', '0');
+                });
+
+                // 复制链接
+                function copyFn(value) {
+                    var isRTL = document.documentElement.getAttribute('dir') === 'rtl';
+                    var input = document.createElement('textarea');
+                    input.style.fontSize = '12pt';
+                    // Reset box model
+                    input.style.border = '0';
+                    input.style.padding = '0';
+                    input.style.margin = '0';
+                    input.style.position = 'absolute';
+                    input.style[isRTL ? 'right' : 'left'] = '-9999px';
+                    var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+                    input.style.top = yPosition + 'px';
+
+                    input.setAttribute('readonly', '');
+                    input.value = value;
+                    document.body.appendChild(input);
+                    input.select();
+                    input.setSelectionRange(0, input.value.length);
+                    if (document.execCommand) {
+                        document.execCommand('copy');
+                    }
+                }
+
+                // 复制链接
+                function wechatNumCopy(num) {
+                    copyFn(num);
+                    $(online_selector + ' .wechat-num-copy-modal').toggleClass('is-active');
+                }
+            </script>-->
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+        <script>
+            // 异步加载图片
+            $('img[data-src]').lazyload();
+
+            // 存在备案号时才显示备案号
+            if ($('.beian-num').text().trim()) {
+                $('.beian-num').show();
+            }
+
+            // animate
+            if (window.scrollY < 100) { // 解决网页滚动到指定位置时会出现页面错乱
+                ScrollReveal().reveal('.section', { distance: '150%', origin: 'bottom', opacity: null });
+            }
+        </script>
+        <script type="text/javascript" src="./script/customer.js"></script>
     </div>
 </body>
-
 </html>

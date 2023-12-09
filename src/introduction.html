@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html class="sr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>律师介绍 - 上海星盟律师事务所</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./css/header2.css">  
+</head>
+
+<body>
+    <div component="header.html">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.5/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-modal-fx@1.1.1/dist/css/modal-fx.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+        <script src="./script/push.js"></script>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
+        <style type="text/less" id="commom-style">
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';;
+            }
+            p {
+                text-align: left;
+                text-indent: 2em;
+                font-size: 16px;
+                line-height: 1.8;
+            }
+        
+            .section {
+                padding: 3rem 1.5rem 0 1.5rem;
+                @media (max-width: 768px) {
+                    padding: 2rem 0.5rem 0 0.5rem;    
+                }
+            }
+            .input:active, .input:focus, .is-active.input, .is-active.textarea, .is-focused.input, .is-focused.textarea, .select select.is-active, .select select.is-focused, .select select:active, .select select:focus, .textarea:active, .textarea:focus {
+                border-color: #3273dc;
+            }
+            .button.is-primary {
+                background-color: #3273dc;
+                .is-hovered, &:hover {
+                    background-color: #3273dc
+                }
+            }
+            .pagination-link.is-current {
+                background-color: #3273dc;
+                border-color: #3273dc;
+            }
+            .navbar-dropdown {
+                background: #000;
+                border-top-color: #000;
+            }
+        
+            .title {
+                font-size: 14px + 4px;
+                margin-bottom: 1px * 2;
+                @media (max-width: 768px) {
+                    font-size: 14px + 2px;
+                }
+            }
+            .subtitle {
+                font-size: 14px + 2px;
+                margin-bottom: 1px * 2;
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+            .intro {
+                font-size: 14px;
+                line-height: 2;
+                margin-bottom: 1px * 2;
+                @media (max-width: 768px) {
+                    font-size: 14px - 2px;
+                }
+            }
+        
+            .swiper-pagination-bullet-active {
+                background: #3273dc;
+            }
+        
+            .title-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 0 3rem 0;
+                @media (max-width: 768px) {
+                    margin: 0 0 2rem 0;
+                }
+            }
+            a.more {
+                color: black;
+            }
+            .title-block-1 {
+                .title {
+                    font-size: 20px;
+                    text-align: left;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #3273dc;
+                    margin: 0 auto;
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                    }
+                }
+                .subtitle {
+                    line-height: 1.5;
+                    margin: 0 auto;
+                    color: #4c4c4c;
+                    text-align: left;
+                    color: rgba(0, 0, 0, 0.45);
+                    font-family: Arial;
+                    font-size: 16px;
+                    @media (max-width: 768px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+            @media (max-width: 768px){
+                .columns{
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        </style>
+
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bulma-modal-fx@1.1.1/dist/js/modal-fx.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/holderjs@2.9.7/holder.min.js"></script>
+        <style type="text/less">
+            #header_1 {
+                .level {
+                    .level-left {
+                        .level-item img {
+                            max-height: 5rem;
+                        }
+                    }
+                    .level-right {
+                        .level-item p {
+                            text-align: right;
+                            span:last-child {
+                                color: black;
+                                font-size: 12px;
+                            }
+                            span:first-child {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+                .navbar {
+                    @media (min-width: 1024px) {
+                        background: black;
+                    }
+                }
+                .navbar-start{ 
+                    width:100%; 
+                    @media (min-width: 1024px) {
+                        .navbar-item { 
+                            flex: 1; 
+                            justify-content: center; 
+                        }
+                    }
+                }
+                
+                .navbar-menu {
+                    @media (max-width: 1024px) {
+                        background: black;
+                        padding: 0;
+                    }
+                }
+                .navbar-brand {
+                    align-items: center;
+                    img {
+                        max-height: 2.75rem;
+                    }
+                }
+                .navbar-burger{
+                    color: #3273dc;
+                    &:hover {
+                        color: #3273dc;
+                    }
+                }
+                .navbar-item:not(.has-dropdown), .navbar-link {
+                    color: #fff;
+                    @media (min-width: 1024px) {
+                        /* padding: 0.5rem 6.3rem; */
+                        background: black;
+                    }
+                }
+                .navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover {
+                    background: #3273dc;
+                    color: #fff;
+                }
+                .navbar-link.is-active:not(:focus):not(:hover), a.navbar-item.is-active:not(:focus):not(:hover) {
+                    background: #3273dc;
+                }
+                .is-primary-color {
+                    color: #3273dc;
+                }
+                .is-primary-bg {
+                    background: black;
+                }
+
+                .padding-ud-3 {
+                    padding: 30px 0;
+                }
+
+                .font-size-16 {
+                    font-size: 16px;
+                }
+
+                .i-mobile-style {
+                    font-size: 49px;
+                    padding: 0 8px;
+                }
+                .logo-img {
+                    max-height: 57px;
+                }
+            }
+            .navbar-link:not(.is-arrowless)::after{
+                border-color: #fff;
+            }
+            .stuck {
+                position:fixed;
+                width: 100%;
+                top:0;
+                z-index: 100;
+                background: #fff;
+                box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+            }
+        </style>
+        <header id="header_1">
+            <div class="container is-hidden-mobile">
+                <div class="level padding-ud-3">
+                    <div class="level-left">
+                        <a href="index.html" class="level-item">
+                            <img src="./image/logo.png" alt="logo" class="logo-img" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="level-right is-primary-color">
+                        <div class="level-item font-size-16">
+                            <p>
+                                <span>超越传统，塑造卓越</span> <br>
+                                <span>TRANSCEND TRADITION AND SHAPE EXCELLENCE</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div component="menus.js">
+
+                <div class="is-primary-bg">
+                    <div class="container">
+                        <nav class="navbar">
+                            <div class="navbar-brand is-hidden-tablet">
+                                <a class="navbar-item" href="index.html">
+                                    <img src="./image/logo.png" loading="lazy">
+                                </a>
+                                <a class="navbar-burger burger" data-target="navbarDetail">
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                </a>
+                            </div>
+
+                            <div id="navbarDetail" class="navbar-menu">
+                                <div class="navbar-start">
+                                    <a class="navbar-item " href="index.html">首页</a>
+                                    <a class="navbar-item " href="brief.html">事务所介绍</a>
+                                    <a class="navbar-item is-active" href="introduction.html">律师介绍</a>
+                                    <a class="navbar-item " href="services.html">服务领域</a>
+                                    <a class="navbar-item " href="contactus.html">联系我们</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll(
+                    '.navbar-burger'), 0);
+
+                // Check if there are any navbar burgers
+                if ($navbarBurgers.length > 0) {
+
+                    // Add a click event on each of them
+                    $navbarBurgers.forEach(el => {
+                        el.addEventListener('click', () => {
+
+                            // Get the target from the "data-target" attribute
+                            const target = el.dataset.target;
+                            const $target = document.getElementById(target);
+
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            el.classList.toggle('is-active');
+                            $target.classList.toggle('is-active');
+
+                        });
+                    });
+                }
+            });
+
+            if (window.innerWidth < 768) {
+                var sticky = new Waypoint.Sticky({
+                    element: $('#header_1')[0]
+                })
+            }
+        </script>
+    </div>
+    <!-- banner图 -->
+    <div>
+        <style type="text/less">
+            .banner {
+                height: 300px;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                @media (max-width: 768px) {
+                    height: 200px;
+                    background-position: 72% center;
+                }
+                .title {
+                    color: white;
+                    font-size: 40px;
+                    @media (max-width: 768px) {
+                        font-size: 20px;
+                    }
+                }
+                .subtitle {
+                    color: white;
+                    font-size: 25px;
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        </style>
+        <a class="banner" href="#" style="background-image: url(./image/banner.png);
+        background-position: center;background-size: 100% 100%;  ">
+
+        </a>
+    </div>
+
+    <div component="xinwenliebiao_1_1.html">
+        <style type="text/less">
+            #xinwenliebiao_1_1 {
+            .title {
+                margin-bottom: 0;
+                padding: 0 0 1px * 2 0;
+                color: #000;
+                font-size: 20px;
+            }
+            .categorys {
+                display: flex;
+                flex-direction: column;
+                background: #fff;
+                height: fit-content;
+                position: relative;
+                
+                @media (max-width: 768px) {
+                    flex-direction: row;
+                    overflow-x: scroll;
+                    &.has-scroll::after {
+                        content: '';
+                        background-color: rgba(244, 245, 246, 0.8);
+                        width: 5px;
+                        height: 21px;
+                        right: 0;
+                        top: 10px;
+                        position: absolute;
+                    }
+                }
+                .category {
+                    display: flex;
+                    justify-content: space-between;
+                    color: #4a4a4a;
+                    font-size: 14px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    padding: 10px 0;
+                    border-bottom: 1px solid #cbcbcb;
+                    @media (max-width: 768px) {
+                        padding-right: 10px;
+                        white-space: nowrap;
+                        border-bottom: 0;
+                        padding-left: 0!important;
+                    }
+                    a {
+                        color: inherit;
+                        &:hover,&.is-active  {
+                            color: #3273dc;
+                        }
+                    }
+                    /* 二级分类开关样式 */
+                    .open_category {
+                        cursor: pointer;
+                        color: #4a4a4a;
+                        font-size: 24px;
+                        display: inline-block;
+                        height: 20px;
+                        line-height: 20px;
+                        padding-right: 15px;
+                        @media (max-width: 768px) {
+                            font-size: unset;
+                            height: unset;
+                            line-height: unset;
+                            padding-right: unset;
+                        }
+                    }
+                }
+                /* 二级分类样式 */
+                .child_category {
+                    display: none;
+                }
+            }
+            .xinwen-item {
+                margin-bottom: 1px * 4;
+                padding-bottom: 1px * 2;
+                border-bottom: 1px solid #cbcbcb;
+                @media (max-width: 768px) {
+                    margin-bottom: 1px * 2;
+                }
+                .content {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .title {
+                        font-size: 20px;
+                        margin-bottom: 1px * 2;
+                        padding: 0;
+                        /*.ellipsis();*/
+                    }
+                    .subtitle {
+                        font-size: 10px;
+                        margin-top: 0;
+                        margin-bottom: 1px;
+                        color: rgba(0, 0, 0, 0.45);
+                    }
+                    .intro {
+                        text-indent: 0;
+                        font-size: 16px;
+                        color: rgba(0, 0, 0, 0.45);
+                        line-height: 1.5;
+    
+                        display: -webkit-box;  
+                        -webkit-line-clamp: 5;  
+                        -webkit-box-orient: vertical;  
+                        overflow: hidden;  
+                        /*.multi-ellipsis(5);*/
+                    }
+                    .more_intro {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 14px;
+                        color: rgba(0, 0, 0, 0.45);
+                        .date {
+                            padding-right: 1px;
+                        }
+                        i {
+                            padding-right: 1px;
+                        }
+                        .more {
+                            color: rgba(0, 0, 0, 0.45);
+                        }
+                    }
+                    
+                }
+                .intro_category {
+                    color: rgba(0, 0, 0, 0.45);
+                    padding-right: 1px;
+                }
+            }
+        }
+        </style>
+        <div id="xinwenliebiao_1_1" class="section" style="visibility: visible;">
+            <div class="container">
+                <div component="1_1_articles.js" data="{
+                    'show_size': -1, 
+                    'show_pre_page': 4, 
+                    'image_ratio': 0.66, 
+                    'object_fit': 'cover'
+                }">
+    
+                    <div class="column">
+                        <div class="articles">
+                            <div class="xinwen-item" style="display: block;">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <img src="./image/introduction/face1.png" loading="lazy" alt="蓝江律师" style="border-radius: 50%;"> 
+                                    </div>
+                                    <div class="column">
+                                        <div class="content">
+                                            <div>
+                                                <p class="intro" style="font-size:larger; font-weight: bold; color: black;">蓝江律师&nbsp;创始人
+                                                    <div style="border-style: dashed; border-width: 0.5px; border-color:#bfbfbf; width: 5em;"></div>    
+                                                </p>
+                                                <p class="intro">
+                                                    蓝江律师毕业于上海财经大学法学院，获硕士学位，留学美国伊利诺伊大学香槟分校（UIUC）法学院，获硕士学位，现担任上海市律师协会公司与商事业务委员会委员。
+                                                    蓝江律师同时拥有中国和美国纽约州律师执业资格，曾先后就职于艾格峰律师事务所、中伦律师事务所等外资和国内顶尖的律师事务所，能够熟练地使用中文和英文为客户提供法律服务。
+                                                    蓝江律师在公司法、劳动人事合规、融资并购、重大商事争议解决领域拥有十多年的执业经验。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="xinwen-item" style="display: block;">
+                                <div class="columns">
+                                    <div class="column is-3" >
+                                        <img src="./image/introduction/刘晓宇律师.png" loading="lazy" alt="刘晓宇律师"style="border-radius: 50%;"> 
+                                    </div>
+                                    <div class="column">
+                                        <div class="content">
+                                            <div>
+                                                <p class="intro" style="font-size:larger; font-weight: bold; color: black;">刘晓宇律师&nbsp;合伙人
+                                                    <div style="border-style: dashed; border-width: 0.5px; border-color:#bfbfbf; width: 5em;"></div>
+                                                </p>
+                                                <p class="intro">
+                                                    刘晓宇律师毕业于华东政法大学，获法学学士、硕士学位。刘晓宇律师拥有多年法律实务经验，曾执业于京都律师事务所、浩信律师事务所等国内综合型律师事务所，
+                                                    现为上海星盟律师事务所合伙人。
+                                                    刘晓宇律师专职从事民商事案件代理与刑事辩护工作，曾参与多起重大、复杂的公司、合同、商事纠纷案件的代理与经济犯罪、职务犯罪等刑事案件的辩护工作，
+                                                    所代理案件多数取得良好的办理结果。在诉讼之外，亦能为企业在经营管理过程中所面临法律风险的识别与防范提供及时有效的法律见解与合规方案。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="xinwen-item" style="display: block;">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <img src="./image/introduction/徐晓娜律师.png" loading="lazy" alt="徐晓娜律师" style="border-radius: 50%;"> 
+                                    </div>
+                                    <div class="column">
+                                        <div class="content">
+                                            <div>
+                                                <p class="intro" style="font-size:larger; font-weight: bold; color: black;">徐晓娜律师
+                                                    <div style="border-style: dashed; border-width: 0.5px; border-color:#bfbfbf; width: 5em;"></div>
+                                                </p>
+                                                <p class="intro">
+                                                    徐晓娜律师拥有11余年法院和律师工作经验。徐律师自 2012 年起在江苏省某法院担任代理审判员和审判员，在审判一线审理过上千起民事案件。
+                                                    自2017年起，徐律师开始从事律师职业后，也办理过百余起案件。徐晓娜律师专职从事于公司、合同、商事案件的代理工作，
+                                                    曾参与多起重大复杂的民商事、投资、合同、破产、股东纠纷和执行等案件的代理，办理过经济类刑事案件、民刑交叉案件，尤以合同、公司、家事案件为专长。
+                                                    在诉讼之外担任多家企业的法律顾问，为企业的合规、劳动、投资和股权架构等问题提供法律意见与方案。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="xinwen-item" style="display: block;">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <img src="./image/introduction/孙胜贤律师.png" loading="lazy" alt="孙胜贤律师" style="border-radius: 50%;"> 
+                                    </div>
+                                    <div class="column">
+                                        <div class="content">
+                                            <div>
+                                                <p class="intro" style="font-size:larger; font-weight: bold; color: black;">孙胜贤律师
+                                                    <div style="border-style: dashed; border-width: 0.5px; border-color:#bfbfbf; width: 5em;"></div>
+                                                </p>
+                                                <p class="intro">
+                                                    孙胜贤律师毕业于辽宁大学法学院，获硕士学位。孙胜贤律师专注于房地产、建筑工程、公司投融资等领域的民商事争议解决以及非诉法律业务。
+                                                    孙律师拥有多年房地产、建筑工程、金融等行业工作经验，熟悉房地产、建筑工程、金融/基金等领域相关法律业务，
+                                                    包含收并购、诉讼、合规、风控等，参与过数十个房地产项目投资过程中的各种商务谈判、尽职调查、交易结构设计以及文件起草等工作。
+                                                    孙律师具有丰富的投资、合作、收并购类等交易文件设计/起草经验和涉及以上领域的重大民商事诉讼和争议解决经验。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="xinwen-item" style="display: block;">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <img src="./image/introduction/王赫律师.png" loading="lazy" alt="王赫律师" style="border-radius: 50%;"> 
+                                    </div>
+                                    <div class="column">
+                                        <div class="content">
+                                            <div>
+                                                <p class="intro" style="font-size:larger; font-weight: bold; color: black;">王赫律师
+                                                    <div style="border-style: dashed; border-width: 0.5px; border-color:#bfbfbf; width: 5em;"></div>
+                                                </p>
+                                                <p class="intro">
+                                                    王赫律师拥有三年律所工作经验，执业以来恪守律师职业道德和执业纪律，全面开展律师的各项业务工作。
+                                                    擅长民商事及涉及公司的法律事务，对企业经济纠纷，公司法务工作、各类合同纠纷、债权债务纠纷、劳动争议纠纷等法律事务具有丰富经验。
+                                                    法律功底深厚，业务沟通交际能力强，办案思维清晰、敏捷，工作认真，待人真诚，客户信任度高。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="xinwen-item" style="display: block;">
+                                <div class="columns">
+                                    <div class="column is-3">
+                                        <img src="./image/introduction/钱凌志律师.png" loading="lazy" alt="钱凌志律师" style="border-radius: 50%;"> 
+                                    </div>
+                                    <div class="column">
+                                        <div class="content">
+                                            <div>
+                                                <p class="intro" style="font-size:larger; font-weight: bold; color: black;">钱凌志律师
+                                                    <div style="border-style: dashed; border-width: 0.5px; border-color:#bfbfbf; width: 5em;"></div>
+                                                </p>
+                                                <p class="intro">
+                                                    钱凌志律师毕业于美国凯斯西储（CWRU）大学，获硕士学位。曾先后就职于中国电信，德汇集团等大型集团公司，
+                                                    及北京市京师（上海）律师事务所等全国综合型律师事务所，能够熟练地使用中文和英文为客户提供法律服务。
+                                                    钱律师专注于各类民商事争议解决及非诉工作。拥有多年房地产、互联网文娱、金融投资领域等行业工作经验，
+                                                    包含风投、混改、诉讼、合规、风控、常年法律顾问等，曾参与过数十个投资项目过程中的各种商务谈判、尽职调查、交易结构设计以及文件起草等工作。
+                                                    在诉讼领域，曾参与多起重大复杂的民商事纠纷案件。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div component="footer.html">
+        <style type="text/less">
+            #gongyongdibu {
+                background: #212121;
+                margin-top: 1px * 3;
+                .footer-intro {
+                    padding-bottom: 24px;
+                }
+                .title {
+                    color: white;
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                }
+                .subtitle {
+                    color: #bfbfbf;
+                    margin-bottom: 1px * 2;
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    img {
+                        margin-right: 1px;
+                    }
+                }
+                .intro {
+                    color: #bfbfbf;
+                    text-indent: 0;
+                    overflow:hidden; text-overflow:ellipsis; display:-webkit-box !important; -webkit-line-clamp:5; -webkit-box-orient:vertical;
+                }
+                hr {
+                    width: 3em;
+                    background-color: #3273dc;
+                }
+            }
+            .copyright {
+                text-align: center;
+                font-size: 16px;
+                line-height: 4;
+                color: white;
+                background: black;
+                a {
+                    color: white;
+                }
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                    margin-top: 1px * 2;
+                }
+            } 
+        </style>
+        <div id="gongyongdibu" class="is-hidden-mobile">
+            <div class="section" data-sr-id="2" style="visibility: visible; padding: 24px 24px;">
+                <div class="footer-intro container">
+                    <div class="columns">
+                        <div class="column is-4" style="width: 50%; padding-top: 40px;">
+                            <h1 class="title">星盟律师事务所</h1>
+                            <hr>
+                            <ul>
+                                <li class="subtitle">
+                                    星盟律师的专业服务范围覆盖民商事诉讼、刑事辩护、房地产法律服务、知识产权、政府与企业法律顾问、破产清算等诉讼与非诉板块领域。
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column is-4" style="width: 50%;">
+                            <table>
+                                <tr>
+                                    <td rowspan = "2">
+                                        <div class="column">
+                                            <img src="./image/scaner.png" alt="scan" class="scan-img">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="column">
+                                            <li class="subtitle">地址：上海市长宁区延安西路728号10楼G座</li>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="column">
+                                            <li class="subtitle"></li>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>©
+                <script>document.write(new Date().getFullYear())</script>
+            </span>
+            <span dynamic-var="config['公共']['公司名称']">互联网服务</span>
+            <span>版权所有</span>
+            <a style="display: none;" href="http://beian.miit.gov.cn/" dynamic-var="config['公共']['备案号']" class="beian-num"></a>
+        </div>
+        <div component="online_1.html">
+            <style type="text/less">
+                #online_1 {
+                    /*使用组件将 --position 的值改为 fixed*/
+                    --position: fixed;
+                    .online-show {
+                        position: var(--position);
+                        right: 0;
+                        top: calc(50% - 74px);
+                        z-index: 1001;
+                        background-color: #3273dc;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 26px;
+                        padding: 1px;
+                        border-top-left-radius: 1px;
+                        border-bottom-left-radius: 1px;
+                        transition: right 500ms;
+                        p {
+                            text-indent: 0;
+                            font-size: 14px;
+                            line-height: 1.5;
+                            padding: 1px 0;
+                            max-width: 100%;
+                            word-break: break-word;
+                            text-transform: uppercase;
+                            text-align: center;
+                        }
+                    }
+                    .online-content {
+                        position: var(--position);
+                        top: calc(50% - 74px);
+                        z-index: 1000;
+                        right: -100vw;
+                        transition: right 500ms; 
+                        .box{
+                            padding: 1px * 2;
+                            border: 2px solid #3273dc;
+                            .content {
+                                p {
+                                    text-indent: 0;
+                                    margin: 0;
+                                    font-size: 14px;
+                                    &.is-flex {
+                                        align-items: center;
+                                    }
+                                }
+                                p:not(:last-child) {
+                                    padding-bottom: 1px;
+                                }
+                                .icon {
+                                    width: auto;
+                                }
+                            }
+                        }
+                    }
+                    .online-mobile {
+                        position: var(--position);
+                        right: 0;
+                        bottom: 50px;
+                        z-index: 999;
+                        .content {
+                            display: flex;
+                            flex-direction: column;
+                            i {
+                                width: 40px;
+                                height: 40px;
+                                line-height: 40px;
+                                text-align: center;
+                                font-size: 20px;
+                                background: rgba(31, 31, 31, 0.65);
+                                color: #fff;
+                                border-radius: 50%;
+                                margin: 1px 1px 0 0;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .wechat-num-copy-modal {
+                        .modal-content {
+                            background: rgb(255, 255, 255);
+                            width: 238px;
+                            padding-top: 20px;
+                            text-align: center;
+                            img {
+                                margin-bottom: 10px;
+                            }
+                            .title {
+                                font-size: 14px;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            .subtitle {
+                                color: rgb(153, 153, 153);
+                                font-size: 12px;
+                                line-height: 17px;
+                                margin-top: 3px;
+                                padding-bottom: 0;
+                                margin-bottom: 0;
+                            }
+                            .is-ok {
+                                color: rgb(51, 132, 227);
+                                padding: 9px 0px;
+                                margin: 12px 12px 0px;
+                                border-top: 1px solid rgb(236, 236, 236);
+                            }
+                        }
+
+                    }
+                }
+            </style>
+<!--
+            <div id="online_1">
+                <div class="online-show is-hidden-mobile">
+                    <i class="fa fa-user"></i>
+                    <p>在线客服</p>
+                    <i class="fa fa-caret-left"></i>
+                </div>
+
+                <div component="1_online.js">
+
+                    <div class="online-content is-hidden-mobile">
+                        <div class=" box">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p><span><i class="fa fa-phone"></i>&nbsp;&nbsp;电话：</span><span>400-888-8888</span>
+                                        </p>
+                                        <p><span><i class="fa fa-mobile"></i>&nbsp;&nbsp;&nbsp;手机：</span><span>13888888888</span>
+                                        </p>
+                                        <p><span><i class="fa fa-envelope-o"></i>&nbsp;邮箱：</span><span>4008888888@qq.com</span>
+                                        </p>
+                                        <p><span><i class="fa fa-weixin"></i>&nbsp;微信：</span><span>13888888888</span>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="online-mobile is-hidden-tablet">
+                        <div class="content">
+                            <a href="tel:13888888888"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                            <a href="javascript:wechatNumCopy('13888888888')"><i class="fa fa-weixin"></i></a>
+                        </div>
+                    </div>
+                    <div class="modal modal-fx-fadeInScale wechat-num-copy-modal">
+                        <div class="modal-background"
+                            onclick="$('.wechat-num-copy-modal').toggleClass('is-active')"></div>
+                        <div class="modal-content">
+                            <img src="./image/share-finish-ok.svg" alt="" loading="lazy">
+                            <div class="title">微信号已复制</div>
+                            <div class="is-ok"
+                                onclick="$('.wechat-num-copy-modal').toggleClass('is-active')">OK
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <script>
+                var online_selector = '#online_1';
+                $(online_selector + ' .online-show').on('mouseenter', function () {
+                    $(this).css('right', '-100vw');
+                    $(online_selector + ' .online-content').css('right', '0');
+                });
+                $(online_selector + ' .online-content').on('mouseleave', function () {
+                    $(this).css('right', '-100vw');
+                    $(online_selector + ' .online-show').css('right', '0');
+                });
+
+                // 复制链接
+                function copyFn(value) {
+                    var isRTL = document.documentElement.getAttribute('dir') === 'rtl';
+                    var input = document.createElement('textarea');
+                    input.style.fontSize = '12pt';
+                    // Reset box model
+                    input.style.border = '0';
+                    input.style.padding = '0';
+                    input.style.margin = '0';
+                    input.style.position = 'absolute';
+                    input.style[isRTL ? 'right' : 'left'] = '-9999px';
+                    var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+                    input.style.top = yPosition + 'px';
+
+                    input.setAttribute('readonly', '');
+                    input.value = value;
+                    document.body.appendChild(input);
+                    input.select();
+                    input.setSelectionRange(0, input.value.length);
+                    if (document.execCommand) {
+                        document.execCommand('copy');
+                    }
+                }
+
+                // 复制链接
+                function wechatNumCopy(num) {
+                    copyFn(num);
+                    $(online_selector + ' .wechat-num-copy-modal').toggleClass('is-active');
+                }
+            </script>
+        -->
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+        <script>
+            // 异步加载图片
+            $('img[data-src]').lazyload();
+
+            // 存在备案号时才显示备案号
+            if ($('.beian-num').text().trim()) {
+                $('.beian-num').show();
+            }
+
+            // animate
+            if (window.scrollY < 100) { // 解决网页滚动到指定位置时会出现页面错乱
+                ScrollReveal().reveal('.section', { distance: '150%', origin: 'bottom', opacity: null });
+            }
+        </script>
+        <script type="text/javascript" src="./script/customer.js"></script>
+    </div>
+</body>
+</html>
