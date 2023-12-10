@@ -394,6 +394,8 @@
                     </div>
                     <div class="column is-6-tablet is-12-touch">
                         <div class="item beief-text"  style="background: #1D51AD; color: #ffffff;height: 100%;">
+                            <br>
+                            <br class="is-hidden-mobile">
                             <p class="h1" style="text-indent: 0">一站式的法律解决方案</p>
                             <br>
                             <p style="text-indent: 0">以凭借扎实的法律功底和丰富的实践经验，星盟律师团队为客户提供全方位、一站式的法律解决方案，助力客户实现商业价值最大化。</p>
@@ -406,53 +408,6 @@
 
     
     <div component="footer.html">
-        <style type="text/less">
-            #gongyongdibu {
-                background: #212121;
-                margin-top: 1px * 3;
-                .footer-intro {
-                    padding-bottom: 12px;
-                }
-                .title {
-                    color: white;
-                    font-size: 20px;
-                    letter-spacing: 2px;
-                }
-                .subtitle {
-                    color: #bfbfbf;
-                    margin-bottom: 1px * 2;
-                    display: flex;
-                    align-items: center;
-                    font-size: 14px;
-                    img {
-                        margin-right: 1px;
-                    }
-                }
-                .intro {
-                    color: #bfbfbf;
-                    text-indent: 0;
-                    overflow:hidden; text-overflow:ellipsis; display:-webkit-box !important; -webkit-line-clamp:5; -webkit-box-orient:vertical;
-                }
-                hr {
-                    width: 3em;
-                    background-color: #3273dc;
-                }
-            }
-            .copyright {
-                text-align: center;
-                font-size: 16px;
-                line-height: 4;
-                color: white;
-                background: black;
-                a {
-                    color: white;
-                }
-                @media (max-width: 768px) {
-                    font-size: 14px;
-                    margin-top: 1px * 2;
-                }
-            } 
-        </style>
         <div id="gongyongdibu" class="is-hidden-mobile">
             <div class="section" data-sr-id="2" style="visibility: visible; padding: 24px 24px; padding: 24px 24px;">
                 <div class="footer-intro container">
@@ -475,15 +430,15 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="column">
-                                            <li class="subtitle" style="height: 100%;">地址：上海市长宁区延安西路728号10楼G座</li>
+                                        <div class="column" style="padding-top: 2em;">
+                                            <li class="subtitle">地址：上海市长宁区延安西路728号10楼G座</li>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <div class="column">
-                                            <li class="subtitle"></li>
+                                            <li class="subtitle">邮箱：admin@xingmenglaw.com</li>
                                         </div>
                                     </td>
                                 </tr>
@@ -494,10 +449,10 @@
             </div>
         </div>
         <div class="copyright">
-            <span>©
-                <script>document.write(new Date().getFullYear())</script>
+            <span>©&nbsp;沪ICP备2023035630号
+
             </span>
-            <span dynamic-var="config['公共']['公司名称']">互联网服务</span>
+            <span dynamic-var="config['公共']['公司名称']">上海星盟律师事务所</span>
             <span>版权所有</span>
             <a style="display: none;" href="http://beian.miit.gov.cn/" dynamic-var="config['公共']['备案号']" class="beian-num"></a>
         </div>

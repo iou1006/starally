@@ -303,9 +303,6 @@
                     text-align: center;
                 }
             </style>
-            <div class="textIndex">
-                轻松跨入互联网时代<br>专注律师MCN打造，为律师提供海量客源
-            </div>
         </header>
         <script>
             document.addEventListener('DOMContentLoaded', () => {
@@ -465,55 +462,297 @@
 
         </div>
     </div>
-
-    <div component="footer.html">
+    <div component="xinwenliebiao_1_1.html">
         <style type="text/less">
-            #gongyongdibu {
-                background: #212121;
-                margin-top: 1px * 3;
-                .footer-intro {
-                    padding-bottom: 24px;
-                }
-                .title {
-                    color: white;
-                    font-size: 20px;
-                    letter-spacing: 2px;
-                }
-                .subtitle {
-                    color: #bfbfbf;
-                    margin-bottom: 1px * 2;
-                    display: flex;
-                    align-items: center;
-                    font-size: 14px;
-                    img {
-                        margin-right: 1px;
+            #xinwenliebiao_1_1 {
+            .title {
+                margin-bottom: 0;
+                padding: 0 0 1px * 2 0;
+                color: #000;
+                font-size: 20px;
+            }
+            .categorys {
+                display: flex;
+                flex-direction: column;
+                background: #fff;
+                height: fit-content;
+                position: relative;
+                
+                @media (max-width: 768px) {
+                    flex-direction: row;
+                    overflow-x: scroll;
+                    &.has-scroll::after {
+                        content: '';
+                        background-color: rgba(244, 245, 246, 0.8);
+                        width: 5px;
+                        height: 21px;
+                        right: 0;
+                        top: 10px;
+                        position: absolute;
                     }
                 }
-                .intro {
-                    color: #bfbfbf;
-                    text-indent: 0;
-                    overflow:hidden; text-overflow:ellipsis; display:-webkit-box !important; -webkit-line-clamp:5; -webkit-box-orient:vertical;
+                .category {
+                    display: flex;
+                    justify-content: space-between;
+                    color: #4a4a4a;
+                    font-size: 14px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    padding: 10px 0;
+                    border-bottom: 1px solid #cbcbcb;
+                    @media (max-width: 768px) {
+                        padding-right: 10px;
+                        white-space: nowrap;
+                        border-bottom: 0;
+                        padding-left: 0!important;
+                    }
+                    a {
+                        color: inherit;
+                        &:hover,&.is-active  {
+                            color: #3273dc;
+                        }
+                    }
+                    /* 二级分类开关样式 */
+                    .open_category {
+                        cursor: pointer;
+                        color: #4a4a4a;
+                        font-size: 24px;
+                        display: inline-block;
+                        height: 20px;
+                        line-height: 20px;
+                        padding-right: 15px;
+                        @media (max-width: 768px) {
+                            font-size: unset;
+                            height: unset;
+                            line-height: unset;
+                            padding-right: unset;
+                        }
+                    }
                 }
-                hr {
-                    width: 3em;
-                    background-color: #3273dc;
+                /* 二级分类样式 */
+                .child_category {
+                    display: none;
                 }
             }
-            .copyright {
-                text-align: center;
-                font-size: 16px;
-                line-height: 4;
-                color: white;
-                background: black;
-                a {
-                    color: white;
-                }
+            .xinwen-item {
+                margin-bottom: 1px * 4;
+                padding-bottom: 1px * 2;
+                border-bottom: 1px solid #cbcbcb;
                 @media (max-width: 768px) {
-                    font-size: 14px;
-                    margin-top: 1px * 2;
+                    margin-bottom: 1px * 2;
                 }
-            } 
+                .content {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .title {
+                        font-size: 20px;
+                        margin-bottom: 1px * 2;
+                        padding: 0;
+                        /*.ellipsis();*/
+                    }
+                    .subtitle {
+                        font-size: 10px;
+                        margin-top: 0;
+                        margin-bottom: 1px;
+                        color: rgba(0, 0, 0, 0.45);
+                    }
+                    .intro {
+                        text-indent: 0;
+                        font-size: 16px;
+                        color: rgba(0, 0, 0, 0.45);
+                        line-height: 1.5;
+    
+                        display: -webkit-box;  
+                        -webkit-line-clamp: 5;  
+                        -webkit-box-orient: vertical;  
+                        overflow: hidden;  
+                        /*.multi-ellipsis(5);*/
+                    }
+                    .more_intro {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 14px;
+                        color: rgba(0, 0, 0, 0.45);
+                        .date {
+                            padding-right: 1px;
+                        }
+                        i {
+                            padding-right: 1px;
+                        }
+                        .more {
+                            color: rgba(0, 0, 0, 0.45);
+                        }
+                    }
+                    
+                }
+                .intro_category {
+                    color: rgba(0, 0, 0, 0.45);
+                    padding-right: 1px;
+                }
+            }
+        }
         </style>
+        <div id="xinwenliebiao_1_1" class="section" style="visibility: visible;">
+            <div class="container">
+                <div component="1_1_articles.js" data="{
+                    'show_size': -1, 
+                    'show_pre_page': 4, 
+                    'image_ratio': 0.66, 
+                    'object_fit': 'cover'
+                }">
+    
+                    <div class="column">
+                        <style type="text/css">
+                            .pavator{
+                                display: flex;
+                                justify-content: center;
+                            }
+
+                            .avator{
+                                height: 15rem;
+                            }
+
+                            .introtitle{
+                                font-size:larger; 
+                                font-weight: bold; 
+                                color: black;
+                            }
+                            .dashline{
+                                border-style: dashed; 
+                                border-width: 0.5px; 
+                                border-color:#bfbfbf;
+                                width: 5em;
+                            }
+                        </style>
+                        <div class="title-item">
+                            <div class="title-block-1">
+                                <h1 class="title is-spaced">律师介绍</h1>
+                                <h2 class="subtitle">LAWYER INDUCTION</h2>
+                            </div>
+                            <a href="./introduction.html" class="more">了解更多&gt;&gt;</a>
+                        </div>
+                        <div class="articles">
+                            <div class="xinwen-item" style="display: block;">
+                                <div class="columns">
+                                    <div class="column is-2 pavator">
+                                        <a href="./intorduction/lj.html">
+                                        <img class="avator" src="./image/introduction/蓝江律师.png" loading="lazy" alt="蓝江律师" style="border-radius: 50%;"> 
+                                    </a>
+                                    </div>
+                                    <div class="column">
+                                        <div class="content">
+                                            <div>
+                                                <br class="is-hidden-mobile">
+                                                <br class="is-hidden-mobile">
+                                                <p class="intro introtitle" >
+                                                    <a href="./intorduction/lj.html" style="font-size:larger; font-weight: bold; color: black;">
+                                                    蓝江律师&nbsp;创始人</a>
+                                                    <div class="dashline"></div>
+                                                </p>
+                                                <p class="intro">
+                                                    蓝江律师毕业于上海财经大学法学院，获硕士学位，留学美国伊利诺伊大学香槟分校（UIUC）法学院，获硕士学位，现担任上海市律师协会公司与商事业务委员会委员。
+                                                    蓝江律师同时拥有中国和美国纽约州律师执业资格，曾先后就职于艾格峰律师事务所、中伦律师事务所等外资和国内顶尖的律师事务所，能够熟练地使用中文和英文为客户提供法律服务。
+                                                    蓝江律师在公司法、劳动人事合规、融资并购、重大商事争议解决领域拥有十多年的执业经验。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="xinwen-item" style="display: block;">
+                                <div class="columns">
+                                    <div class="column is-2 pavator">
+                                        <a href="./intorduction/lxy.html">
+                                        <img class="avator" src="./image/introduction/刘晓宇律师.png" loading="lazy" alt="刘晓宇律师"style="border-radius: 50%;"> </a>
+                                    </div>
+                                    <div class="column">
+                                        <div class="content">
+                                            <div>
+                                                <br class="is-hidden-mobile">
+                                                <br class="is-hidden-mobile">
+                                                <p class="intro">
+                                                    <a href="./intorduction/lxy.html" style="font-size:larger; font-weight: bold; color: black;">刘晓宇律师&nbsp;合伙人
+                                                    </a>
+                                                    <div class="dashline"></div>
+                                                </p>
+                                                <p class="intro">
+                                                    刘晓宇律师毕业于华东政法大学，获法学学士、硕士学位。刘晓宇律师拥有多年法律实务经验，曾执业于京都律师事务所、浩信律师事务所等国内综合型律师事务所，
+                                                    现为上海星盟律师事务所合伙人。
+                                                    刘晓宇律师专职从事民商事案件代理与刑事辩护工作，曾参与多起重大、复杂的公司、合同、商事纠纷案件的代理与经济犯罪、职务犯罪等刑事案件的辩护工作，
+                                                    所代理案件多数取得良好的办理结果。在诉讼之外，亦能为企业在经营管理过程中所面临法律风险的识别与防范提供及时有效的法律见解与合规方案。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="xinwen-item" style="display: block;">
+                                <div class="columns">
+                                    <div class="column is-2 pavator">
+                                        <a href="./intorduction/xxn.html">
+                                        <img class="avator" src="./image/introduction/徐晓娜律师.png" loading="lazy" alt="徐晓娜律师" style="border-radius: 50%;"> </a>
+                                    </div>
+                                    <div class="column">
+                                        <div class="content">
+                                            <div>
+                                                <br class="is-hidden-mobile">
+                                                <br class="is-hidden-mobile">
+                                                <p class="intro">
+                                                    <a href="./intorduction/xxn.html" style="font-size:larger; font-weight: bold; color: black;">徐晓娜律师&nbsp;合伙人
+                                                    </a>
+                                                    <div class="dashline"></div>
+                                                </p>
+                                                <p class="intro">
+                                                    徐晓娜律师拥有11余年法院和律师工作经验。徐律师自 2012 年起在江苏省某法院担任代理审判员和审判员，在审判一线审理过上千起民事案件。
+                                                    自2017年起，徐律师开始从事律师职业后，也办理过百余起案件。徐晓娜律师专职从事于公司、合同、商事案件的代理工作，
+                                                    曾参与多起重大复杂的民商事、投资、合同、破产、股东纠纷和执行等案件的代理，办理过经济类刑事案件、民刑交叉案件，尤以合同、公司、家事案件为专长。
+                                                    在诉讼之外担任多家企业的法律顾问，为企业的合规、劳动、投资和股权架构等问题提供法律意见与方案。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="xinwen-item" style="display: block;">
+                                <div class="columns">
+                                    <div class="column is-2 pavator">
+                                        <a href="./intorduction/ssx.html">
+                                        <img class="avator" src="./image/introduction/孙胜贤律师.png" loading="lazy" alt="孙胜贤律师" style="border-radius: 50%;"> </a>
+                                    </div>
+                                    <div class="column">
+                                        <div class="content">
+                                            <div>
+                                                <br class="is-hidden-mobile">
+                                                <br class="is-hidden-mobile">
+                                                <p class="intro">
+                                                    <a href="./intorduction/ssx.html" style="font-size:larger; font-weight: bold; color: black;">孙胜贤律师&nbsp;合伙人
+                                                    </a>
+                                                    <div class="dashline"></div>
+                                                </p>
+                                                <p class="intro">
+                                                    孙胜贤律师毕业于辽宁大学法学院，获硕士学位。孙胜贤律师专注于房地产、建筑工程、公司投融资等领域的民商事争议解决以及非诉法律业务。
+                                                    孙律师拥有多年房地产、建筑工程、金融等行业工作经验，熟悉房地产、建筑工程、金融/基金等领域相关法律业务，
+                                                    包含收并购、诉讼、合规、风控等，参与过数十个房地产项目投资过程中的各种商务谈判、尽职调查、交易结构设计以及文件起草等工作。
+                                                    孙律师具有丰富的投资、合作、收并购类等交易文件设计/起草经验和涉及以上领域的重大民商事诉讼和争议解决经验。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div component="footer.html">
         <div id="gongyongdibu" class="is-hidden-mobile">
             <div class="section" data-sr-id="2" style="visibility: visible; padding: 24px 24px;">
                 <div class="footer-intro container">
@@ -536,7 +775,7 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="column">
+                                        <div class="column" style="padding-top: 2em;">
                                             <li class="subtitle">地址：上海市长宁区延安西路728号10楼G座</li>
                                         </div>
                                     </td>
@@ -544,7 +783,7 @@
                                 <tr>
                                     <td>
                                         <div class="column">
-                                            <li class="subtitle"></li>
+                                            <li class="subtitle">邮箱：admin@xingmenglaw.com</li>
                                         </div>
                                     </td>
                                 </tr>
@@ -555,10 +794,10 @@
             </div>
         </div>
         <div class="copyright">
-            <span>©
-                <script>document.write(new Date().getFullYear())</script>
+            <span>©&nbsp;沪ICP备2023035630号
+
             </span>
-            <span dynamic-var="config['公共']['公司名称']">互联网服务</span>
+            <span dynamic-var="config['公共']['公司名称']">上海星盟律师事务所</span>
             <span>版权所有</span>
             <a style="display: none;" href="http://beian.miit.gov.cn/" dynamic-var="config['公共']['备案号']" class="beian-num"></a>
         </div>
