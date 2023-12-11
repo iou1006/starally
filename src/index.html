@@ -242,21 +242,38 @@
                 box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
             }
         </style>
-        <header id="header_1" href="#"
-            style="background-image: url(./image/homebanner.png); height: 100vh; width: 100vw; 
-            background-size: cover; background-repeat: no-repeat; background-position: center center; ">
+
+        <style type="text/css">
+            @media screen and (min-width: 768px) {
+                #header_1{
+                    background-image: url(./image/homebanner.png); 
+                    height: 100vh; 
+                    width: 100vw; 
+                    background-size: cover; 
+                    background-repeat: no-repeat; 
+                    background-position: center center; 
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                #header_1{
+                    background-image: url(./image/homebanner.png); 
+                    height: 100vh; 
+                    background-size: auto 100% ; 
+                    background-repeat: no-repeat; 
+                    background-position: center center; 
+                }
+            }
+        </style>
+        <header id="header_1" href="#">
             <div component="menus.js">
                 <div class="is-primary-bg">
                     <div class="container">
                         <nav class="navbar">
-                            <div style="text-align: center; position: absolute; left: 50%; top: 0%; transform: translate(-50%, 0%); color: #fff;" class="is-hidden-tablet">
-                                <div style="font-size: 1.3em;">
-                                    XINGMENG</div>
-                                <div>
-                                    星盟律师事务所</div>
-                            </div>
                             <div class="navbar-brand is-hidden-tablet">
-                                
+                                <a class="navbar-item" href="./index.html">
+                                    <img src="./image/logo.png" loading="lazy">
+                                </a>
                                 <a class="navbar-burger burger" data-target="navbarDetail">
                                     <span aria-hidden="true"></span>
                                     <span aria-hidden="true"></span>
@@ -264,20 +281,20 @@
                                 </a>
                             </div>
                             <div id="navbarDetail" class="navbar-menu is-hidden-tablet">
-                                <div class="navbar-start" style="text-align: center;">
-                                    <a class="navbar-item" href="brief.html">事务所介绍</a>
-                                    <a class="navbar-item" href="introduction.html">律师介绍</a>
-                                    <a class="navbar-item" href="services.html">服务领域</a>
-                                    <a class="navbar-item" href="contactus.html">联系我们</a>
+                                <div class="navbar-start" style="text-align: center; background-color: #000;">
+                                    <a class="navbar-item" href="./brief.html">事务所介绍</a>
+                                    <a class="navbar-item" href="./introduction.html">律师介绍</a>
+                                    <a class="navbar-item" href="./services.html">服务领域</a>
+                                    <a class="navbar-item" href="./contactus.html">联系我们</a>
                                 </div>
                             </div>
         
                             <div id="navbarDetail" class="navbar-menu is-hidden-mobile"
                                 style="height: 16.66666667vh; font-size: 1.8em;">
                                 <div class="navbar-start">
-                                    <a class="navbar-item" href="brief.html">事务所介绍</a>
-                                    <a class="navbar-item" href="introduction.html">律师介绍</a>
-                                    <a class="navbar-item is-hidden-mobile" href="index.html">
+                                    <a class="navbar-item" href="./brief.html">事务所介绍</a>
+                                    <a class="navbar-item" href="./introduction.html">律师介绍</a>
+                                    <a class="navbar-item is-hidden-mobile" href="./index.html">
                                         <div style="text-align: center;">
                                             <div style="font-size: 1.4em;">
                                                 XINGMENG</div>
@@ -285,8 +302,8 @@
                                                 星盟律师事务所</div>
                                         </div>
                                     </a>
-                                    <a class="navbar-item" href="services.html">服务领域</a>
-                                    <a class="navbar-item" href="contactus.html">联系我们</a>
+                                    <a class="navbar-item" href="./services.html">服务领域</a>
+                                    <a class="navbar-item" href="./contactus.html">联系我们</a>
                                 </div>
                             </div>
         
@@ -339,7 +356,6 @@
     </div>
 
     <div component="index_intro.html">
-        <link rel="stylesheet" href="./首页_files/lightgallery.css">
         <style type="text/less">
             #gongsijieshao1{
                     .contents {

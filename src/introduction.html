@@ -246,7 +246,7 @@
             <div class="container is-hidden-mobile">
                 <div class="level padding-ud-3">
                     <div class="level-left">
-                        <a href="index.html" class="level-item">
+                        <a href="./index.html" class="level-item">
                             <img src="./image/logo.png" alt="logo" class="logo-img" loading="lazy">
                         </a>
                     </div>
@@ -267,7 +267,7 @@
                     <div class="container">
                         <nav class="navbar">
                             <div class="navbar-brand is-hidden-tablet">
-                                <a class="navbar-item" href="index.html">
+                                <a class="navbar-item" href="./index.html">
                                     <img src="./image/logo.png" loading="lazy">
                                 </a>
                                 <a class="navbar-burger burger" data-target="navbarDetail">
@@ -279,11 +279,11 @@
 
                             <div id="navbarDetail" class="navbar-menu">
                                 <div class="navbar-start">
-                                    <a class="navbar-item " href="index.html">首页</a>
-                                    <a class="navbar-item " href="brief.html">事务所介绍</a>
-                                    <a class="navbar-item is-active" href="introduction.html">律师介绍</a>
-                                    <a class="navbar-item " href="services.html">服务领域</a>
-                                    <a class="navbar-item " href="contactus.html">联系我们</a>
+                                    <a class="navbar-item " href="./index.html">首页</a>
+                                    <a class="navbar-item " href="./brief.html">事务所介绍</a>
+                                    <a class="navbar-item is-active" href="./introduction.html">律师介绍</a>
+                                    <a class="navbar-item " href="./services.html">服务领域</a>
+                                    <a class="navbar-item " href="./contactus.html">联系我们</a>
                                 </div>
                             </div>
                         </nav>
@@ -356,8 +356,24 @@
                 }
             }
         </style>
-        <a class="banner" href="#" style="background-image: url(./image/banner.png);
-        background-position: center;background-size: 100% 100%;  ">
+        <style type="text/css">
+            @media screen and (min-width: 768px) {
+                .bannerimage{
+                    background-image: url(./image/banner.png);
+                    background-position: center;
+                    background-size: 100% 100%; 
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .bannerimage{
+                    background-image: url(./image/banner.png);
+                    background-position: center;
+                    background-size: auto 100%; 
+                }
+            }
+        </style>
+        <a class="banner bannerimage" href="#">
 
         </a>
     </div>
