@@ -356,8 +356,24 @@
                 }
             }
         </style>
-        <a class="banner" href="#" style="background-image: url(../image/banner.png);
-        background-position: center;background-size: 100% 100%;  ">
+        <style type="text/css">
+            @media screen and (min-width: 768px) {
+                .bannerimage{
+                    background-image: url(../image/banner.png);
+                    background-position: center;
+                    background-size: 100% 100%; 
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .bannerimage{
+                    background-image: url(../image/banner.png);
+                    background-position: center;
+                    background-size: auto 100%; 
+                }
+            }
+        </style>
+        <a class="banner bannerimage" href="#">
 
         </a>
     </div>
@@ -385,10 +401,13 @@
             .pexperience{
                 padding-left: 2em;
                 padding-right: 2em;
-                padding-top: 1em;
+                padding-top: 1.5em;
                 padding-bottom: 2em;
             }
             ul.square {list-style-type: square;}
+            li {
+                line-height: 1.8em;
+            }
         </style>
         <div id="details" class="section" style="visibility: visible;">
             <div class="container present">
@@ -417,33 +436,28 @@
                 </div>
                 <div>
                     <div class="pexperience">
-                        <div class="pdetails">
                             <div style="font-weight: bold;">部分代表性刑事辩护案例：</div>
                             <br>
                             <ul class="square">
                                 <li>山东省某大型国有集团高管贪污、受贿、行贿、挪用公款案（涉案金额 5000 余万元，其中贪污罪与挪用公款罪最终被认定为无罪）；</li>
                                 <li>王某合同诈骗案（最终取得无罪判决）；</li>
-                                <li>“聚元系”非法吸收公众存款案（全案涉案金额近 20  亿）；</li>
                                 <li>石某假冒注册商标案（最终取得缓刑判决）；</li>
+                                <li>“聚元系”非法吸收公众存款案（全案涉案金额近 20  亿）；</li>
                                 <li>阮某销售假冒注册商标的商品案（最终取得缓刑判决）；</li>
                                 <li>张某帮助信息网络犯罪活动案（最终取得缓刑判决）；</li>
                                 <li>徐某合同诈骗案；</li>
                                 <li>某融资租赁公司职工非国家工作人员受贿、职务侵占案等。</li>
                             </ul>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="pdetails">
+                            <br>
                             <div style="font-weight: bold;">部分代表性民商事诉讼案例：</div>
                             <br>
                             <ul class="square">
                                 <li>某房地产开发公司破产债权确认纠纷；</li>
-                                <li>某房地产开发公司与中建一局撤销仲裁裁决纠纷</li>
+                                <li>某房地产开发公司与中建一局撤销仲裁裁决纠纷；</li>
                                 <li>某工程实业公司建设施工合同优先权纠纷；</li>
                                 <li>某新材料科技公司与中铁工程局买卖合同纠纷；</li>
                                 <li>某房地产开发公司股权转让合同纠纷。</li>
                             </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -501,135 +515,6 @@
             <span>版权所有</span>
             <a style="display: none;" href="http://beian.miit.gov.cn/" dynamic-var="config['公共']['备案号']" class="beian-num"></a>
         </div>
-        <div component="online_1.html">
-            <style type="text/less">
-                #online_1 {
-                    /*使用组件将 --position 的值改为 fixed*/
-                    --position: fixed;
-                    .online-show {
-                        position: var(--position);
-                        right: 0;
-                        top: calc(50% - 74px);
-                        z-index: 1001;
-                        background-color: #3273dc;
-                        color: #fff;
-                        display: flex;
-                        align-items: center;
-                        flex-direction: column;
-                        width: 26px;
-                        padding: 1px;
-                        border-top-left-radius: 1px;
-                        border-bottom-left-radius: 1px;
-                        transition: right 500ms;
-                        p {
-                            text-indent: 0;
-                            font-size: 14px;
-                            line-height: 1.5;
-                            padding: 1px 0;
-                            max-width: 100%;
-                            word-break: break-word;
-                            text-transform: uppercase;
-                            text-align: center;
-                        }
-                    }
-                    .online-content {
-                        position: var(--position);
-                        top: calc(50% - 74px);
-                        z-index: 1000;
-                        right: -100vw;
-                        transition: right 500ms; 
-                        .box{
-                            padding: 1px * 2;
-                            border: 2px solid #3273dc;
-                            .content {
-                                p {
-                                    text-indent: 0;
-                                    margin: 0;
-                                    font-size: 14px;
-                                    &.is-flex {
-                                        align-items: center;
-                                    }
-                                }
-                                p:not(:last-child) {
-                                    padding-bottom: 1px;
-                                }
-                                .icon {
-                                    width: auto;
-                                }
-                            }
-                        }
-                    }
-                    .online-mobile {
-                        position: var(--position);
-                        right: 0;
-                        bottom: 50px;
-                        z-index: 999;
-                        .content {
-                            display: flex;
-                            flex-direction: column;
-                            i {
-                                width: 40px;
-                                height: 40px;
-                                line-height: 40px;
-                                text-align: center;
-                                font-size: 20px;
-                                background: rgba(31, 31, 31, 0.65);
-                                color: #fff;
-                                border-radius: 50%;
-                                margin: 1px 1px 0 0;
-                                cursor: pointer;
-                            }
-                        }
-                    }
-                    .wechat-num-copy-modal {
-                        .modal-content {
-                            background: rgb(255, 255, 255);
-                            width: 238px;
-                            padding-top: 20px;
-                            text-align: center;
-                            img {
-                                margin-bottom: 10px;
-                            }
-                            .title {
-                                font-size: 14px;
-                                margin: 0;
-                                padding: 0;
-                            }
-                            .subtitle {
-                                color: rgb(153, 153, 153);
-                                font-size: 12px;
-                                line-height: 17px;
-                                margin-top: 3px;
-                                padding-bottom: 0;
-                                margin-bottom: 0;
-                            }
-                            .is-ok {
-                                color: rgb(51, 132, 227);
-                                padding: 9px 0px;
-                                margin: 12px 12px 0px;
-                                border-top: 1px solid rgb(236, 236, 236);
-                            }
-                        }
-
-                    }
-                }
-            </style>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
-        <script>
-            // 异步加载图片
-            $('img[data-src]').lazyload();
-
-            // 存在备案号时才显示备案号
-            if ($('.beian-num').text().trim()) {
-                $('.beian-num').show();
-            }
-
-            // animate
-            if (window.scrollY < 100) { // 解决网页滚动到指定位置时会出现页面错乱
-                ScrollReveal().reveal('.section', { distance: '150%', origin: 'bottom', opacity: null });
-            }
-        </script>
         <script type="text/javascript" src="../script/customer.js"></script>
     </div>
 </body>

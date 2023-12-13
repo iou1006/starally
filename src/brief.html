@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="sr">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -8,7 +7,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>事务所介绍 - 上海星盟律师事务所</title>
-    <meta name="keywords" content="">
+    <meta name="keywords" content="律所,上海星盟律师事务所">
     <meta name="description" content="">
     <link rel="stylesheet" href="./css/header2.css">  
 </head>
@@ -132,9 +131,6 @@
                 }
             }
         </style>
-
-        <!--link rel="stylesheet" type="text/css" href="./服务领域_files/customer.css">
-        <script src="./服务领域_files/holder.js.download"></！script-->
 
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -327,8 +323,6 @@
             }
         </script>
     </div>
-
-    <!-- banner图 -->
 
     <div>
         <style type="text/less">
@@ -584,114 +578,8 @@
                     }
                 }
             </style>
-<!--
-            <div id="online_1">
-                <div class="online-show is-hidden-mobile">
-                    <i class="fa fa-user"></i>
-                    <p>在线客服</p>
-                    <i class="fa fa-caret-left"></i>
-                </div>
-
-                <div component="1_online.js">
-
-                    <div class="online-content is-hidden-mobile">
-                        <div class=" box">
-                            <article class="media">
-                                <div class="media-content">
-                                    <div class="content">
-                                        <p><span><i class="fa fa-phone"></i>&nbsp;&nbsp;电话：</span><span>400-888-8888</span>
-                                        </p>
-                                        <p><span><i class="fa fa-mobile"></i>&nbsp;&nbsp;&nbsp;手机：</span><span>13888888888</span>
-                                        </p>
-                                        <p><span><i class="fa fa-envelope-o"></i>&nbsp;邮箱：</span><span>4008888888@qq.com</span>
-                                        </p>
-                                        <p><span><i class="fa fa-weixin"></i>&nbsp;微信：</span><span>13888888888</span>
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="online-mobile is-hidden-tablet">
-                        <div class="content">
-                            <a href="tel:13888888888"><i class="fa fa-phone" aria-hidden="true"></i></a>
-                            <a href="javascript:wechatNumCopy('13888888888')"><i class="fa fa-weixin"></i></a>
-                        </div>
-                    </div>
-                    <div class="modal modal-fx-fadeInScale wechat-num-copy-modal">
-                        <div class="modal-background"
-                            onclick="$('.wechat-num-copy-modal').toggleClass('is-active')"></div>
-                        <div class="modal-content">
-                            <img src="./image/share-finish-ok.svg" alt="" loading="lazy">
-                            <div class="title">微信号已复制</div>
-                            <div class="is-ok"
-                                onclick="$('.wechat-num-copy-modal').toggleClass('is-active')">OK
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <script>
-                var online_selector = '#online_1';
-                $(online_selector + ' .online-show').on('mouseenter', function () {
-                    $(this).css('right', '-100vw');
-                    $(online_selector + ' .online-content').css('right', '0');
-                });
-                $(online_selector + ' .online-content').on('mouseleave', function () {
-                    $(this).css('right', '-100vw');
-                    $(online_selector + ' .online-show').css('right', '0');
-                });
-
-                // 复制链接
-                function copyFn(value) {
-                    var isRTL = document.documentElement.getAttribute('dir') === 'rtl';
-                    var input = document.createElement('textarea');
-                    input.style.fontSize = '12pt';
-                    // Reset box model
-                    input.style.border = '0';
-                    input.style.padding = '0';
-                    input.style.margin = '0';
-                    input.style.position = 'absolute';
-                    input.style[isRTL ? 'right' : 'left'] = '-9999px';
-                    var yPosition = window.pageYOffset || document.documentElement.scrollTop;
-                    input.style.top = yPosition + 'px';
-
-                    input.setAttribute('readonly', '');
-                    input.value = value;
-                    document.body.appendChild(input);
-                    input.select();
-                    input.setSelectionRange(0, input.value.length);
-                    if (document.execCommand) {
-                        document.execCommand('copy');
-                    }
-                }
-
-                // 复制链接
-                function wechatNumCopy(num) {
-                    copyFn(num);
-                    $(online_selector + ' .wechat-num-copy-modal').toggleClass('is-active');
-                }
-            </script>
--->
         </div>
         <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
-        <!--<script>
-            // 异步加载图片
-            $('img[data-src]').lazyload();
-
-            // 存在备案号时才显示备案号
-            if ($('.beian-num').text().trim()) {
-                $('.beian-num').show();
-            }
-
-            // animate
-            if (window.scrollY < 100) { // 解决网页滚动到指定位置时会出现页面错乱
-                ScrollReveal().reveal('.section', { distance: '150%', origin: 'bottom', opacity: null });
-            }
-        </script>-->
         <script type="text/javascript" src="./script/customer.js"></script>
     </div>
 </body>

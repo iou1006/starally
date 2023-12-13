@@ -8,7 +8,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>律师介绍 - 上海星盟律师事务所</title>
-    <meta name="keywords" content="">
+    <meta name="keywords" content="上海星盟律师事务所">
     <meta name="description" content="">
     <link rel="stylesheet" href="./css/header2.css">  
 </head>
@@ -557,10 +557,10 @@
                                                 <br class="is-hidden-mobile">
                                                 <p class="intro introtitle" >
                                                     <a href="./intorduction/lj.html" style="font-size:larger; font-weight: bold; color: black;">
-                                                    蓝江律师&nbsp;创始人</a>
+                                                    蓝江律师&nbsp;主任</a>
                                                     <div class="dashline"></div>
                                                 </p>
-                                                <p class="contents">
+                                                <p class="intro">
                                                     蓝江律师毕业于上海财经大学法学院，获硕士学位，留学美国伊利诺伊大学香槟分校（UIUC）法学院，获硕士学位，现担任上海市律师协会公司与商事业务委员会委员。
                                                     蓝江律师同时拥有中国和美国纽约州律师执业资格，曾就职于中伦律师事务所等外资和国内顶尖的律师事务所，能够熟练地使用中文和英文为客户提供法律服务。
                                                     蓝江律师在公司法、劳动人事合规、融资并购、重大商事争议解决领域拥有十多年的执业经验。
@@ -587,7 +587,7 @@
                                                     </a>
                                                     <div class="dashline"></div>
                                                 </p>
-                                                <p class="contents">
+                                                <p class="intro">
                                                     刘晓宇律师毕业于华东政法大学，获法学学士、硕士学位。
                                                     刘晓宇律师擅长刑事辩护与刑事控告、民商事案件代理工作，
                                                     曾参与多起重大、复杂的经济犯罪、职务犯罪等刑事案件的辩护与公司、合同、商事纠纷案件的代理工作，
@@ -616,7 +616,7 @@
                                                     </a>
                                                     <div class="dashline"></div>
                                                 </p>
-                                                <p class="contents">
+                                                <p class="intro">
                                                     徐晓娜律师拥有11余年法院和律师工作经验。徐律师自 2012 年起在江苏省某法院担任代理审判员和审判员，在审判一线审理过上千起民事案件。
                                                     自2017年起，徐律师开始从事律师职业后，也办理过百余起案件。徐晓娜律师擅长公司、合同、商事案件的代理工作，
                                                     曾参与多起重大复杂的民商事、投资、合同、破产、股东纠纷和执行等案件的代理，办理过经济类刑事案件、民刑交叉案件，尤以合同、公司、家事案件为专长。
@@ -644,7 +644,7 @@
                                                     </a>
                                                     <div class="dashline"></div>
                                                 </p>
-                                                <p class="contents">
+                                                <p class="intro">
                                                     孙胜贤律师毕业于辽宁大学法学院，获硕士学位。孙胜贤律师专注于房地产、建筑工程、公司投融资等领域的民商事争议解决以及非诉法律业务。
                                                     孙律师拥有多年房地产、建筑工程、金融等行业工作经验，熟悉房地产、建筑工程、金融/基金等领域相关法律业务，
                                                     包含收并购、诉讼、合规、风控等，参与过数十个房地产项目投资过程中的各种商务谈判、尽职调查、交易结构设计以及文件起草等工作。
@@ -672,7 +672,7 @@
                                                     </a>
                                                     <div class="dashline"></div>
                                                 </p>
-                                                <p class="contents">
+                                                <p class="intro">
                                                     王赫律师擅长民商事及涉及公司的法律事务，对企业经济纠纷，公司法务工作、各类合同纠纷、债权债务纠纷、劳动争议纠纷等法律事务具有丰富经验。
                                                     法律功底深厚，业务沟通交际能力强，办案思维清晰、敏捷，工作认真，待人真诚，客户信任度高。
                                                 </p>
@@ -768,227 +768,7 @@
             <span>版权所有</span>
             <a style="display: none;" href="http://beian.miit.gov.cn/" dynamic-var="config['公共']['备案号']" class="beian-num"></a>
         </div>
-        <div component="online_1.html">
-            <style type="text/less">
-                #online_1 {
-                    /*使用组件将 --position 的值改为 fixed*/
-                    --position: fixed;
-                    .online-show {
-                        position: var(--position);
-                        right: 0;
-                        top: calc(50% - 74px);
-                        z-index: 1001;
-                        background-color: #3273dc;
-                        color: #fff;
-                        display: flex;
-                        align-items: center;
-                        flex-direction: column;
-                        width: 26px;
-                        padding: 1px;
-                        border-top-left-radius: 1px;
-                        border-bottom-left-radius: 1px;
-                        transition: right 500ms;
-                        p {
-                            text-indent: 0;
-                            font-size: 14px;
-                            line-height: 1.5;
-                            padding: 1px 0;
-                            max-width: 100%;
-                            word-break: break-word;
-                            text-transform: uppercase;
-                            text-align: center;
-                        }
-                    }
-                    .online-content {
-                        position: var(--position);
-                        top: calc(50% - 74px);
-                        z-index: 1000;
-                        right: -100vw;
-                        transition: right 500ms; 
-                        .box{
-                            padding: 1px * 2;
-                            border: 2px solid #3273dc;
-                            .content {
-                                p {
-                                    text-indent: 0;
-                                    margin: 0;
-                                    font-size: 14px;
-                                    &.is-flex {
-                                        align-items: center;
-                                    }
-                                }
-                                p:not(:last-child) {
-                                    padding-bottom: 1px;
-                                }
-                                .icon {
-                                    width: auto;
-                                }
-                            }
-                        }
-                    }
-                    .online-mobile {
-                        position: var(--position);
-                        right: 0;
-                        bottom: 50px;
-                        z-index: 999;
-                        .content {
-                            display: flex;
-                            flex-direction: column;
-                            i {
-                                width: 40px;
-                                height: 40px;
-                                line-height: 40px;
-                                text-align: center;
-                                font-size: 20px;
-                                background: rgba(31, 31, 31, 0.65);
-                                color: #fff;
-                                border-radius: 50%;
-                                margin: 1px 1px 0 0;
-                                cursor: pointer;
-                            }
-                        }
-                    }
-                    .wechat-num-copy-modal {
-                        .modal-content {
-                            background: rgb(255, 255, 255);
-                            width: 238px;
-                            padding-top: 20px;
-                            text-align: center;
-                            img {
-                                margin-bottom: 10px;
-                            }
-                            .title {
-                                font-size: 14px;
-                                margin: 0;
-                                padding: 0;
-                            }
-                            .subtitle {
-                                color: rgb(153, 153, 153);
-                                font-size: 12px;
-                                line-height: 17px;
-                                margin-top: 3px;
-                                padding-bottom: 0;
-                                margin-bottom: 0;
-                            }
-                            .is-ok {
-                                color: rgb(51, 132, 227);
-                                padding: 9px 0px;
-                                margin: 12px 12px 0px;
-                                border-top: 1px solid rgb(236, 236, 236);
-                            }
-                        }
-
-                    }
-                }
-            </style>
-<!--
-            <div id="online_1">
-                <div class="online-show is-hidden-mobile">
-                    <i class="fa fa-user"></i>
-                    <p>在线客服</p>
-                    <i class="fa fa-caret-left"></i>
-                </div>
-
-                <div component="1_online.js">
-
-                    <div class="online-content is-hidden-mobile">
-                        <div class=" box">
-                            <article class="media">
-                                <div class="media-content">
-                                    <div class="content">
-                                        <p><span><i class="fa fa-phone"></i>&nbsp;&nbsp;电话：</span><span>400-888-8888</span>
-                                        </p>
-                                        <p><span><i class="fa fa-mobile"></i>&nbsp;&nbsp;&nbsp;手机：</span><span>13888888888</span>
-                                        </p>
-                                        <p><span><i class="fa fa-envelope-o"></i>&nbsp;邮箱：</span><span>4008888888@qq.com</span>
-                                        </p>
-                                        <p><span><i class="fa fa-weixin"></i>&nbsp;微信：</span><span>13888888888</span>
-                                        </p>
-
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="online-mobile is-hidden-tablet">
-                        <div class="content">
-                            <a href="tel:13888888888"><i class="fa fa-phone" aria-hidden="true"></i></a>
-                            <a href="javascript:wechatNumCopy('13888888888')"><i class="fa fa-weixin"></i></a>
-                        </div>
-                    </div>
-                    <div class="modal modal-fx-fadeInScale wechat-num-copy-modal">
-                        <div class="modal-background"
-                            onclick="$('.wechat-num-copy-modal').toggleClass('is-active')"></div>
-                        <div class="modal-content">
-                            <img src="./image/share-finish-ok.svg" alt="" loading="lazy">
-                            <div class="title">微信号已复制</div>
-                            <div class="is-ok"
-                                onclick="$('.wechat-num-copy-modal').toggleClass('is-active')">OK
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <script>
-                var online_selector = '#online_1';
-                $(online_selector + ' .online-show').on('mouseenter', function () {
-                    $(this).css('right', '-100vw');
-                    $(online_selector + ' .online-content').css('right', '0');
-                });
-                $(online_selector + ' .online-content').on('mouseleave', function () {
-                    $(this).css('right', '-100vw');
-                    $(online_selector + ' .online-show').css('right', '0');
-                });
-
-                // 复制链接
-                function copyFn(value) {
-                    var isRTL = document.documentElement.getAttribute('dir') === 'rtl';
-                    var input = document.createElement('textarea');
-                    input.style.fontSize = '12pt';
-                    // Reset box model
-                    input.style.border = '0';
-                    input.style.padding = '0';
-                    input.style.margin = '0';
-                    input.style.position = 'absolute';
-                    input.style[isRTL ? 'right' : 'left'] = '-9999px';
-                    var yPosition = window.pageYOffset || document.documentElement.scrollTop;
-                    input.style.top = yPosition + 'px';
-
-                    input.setAttribute('readonly', '');
-                    input.value = value;
-                    document.body.appendChild(input);
-                    input.select();
-                    input.setSelectionRange(0, input.value.length);
-                    if (document.execCommand) {
-                        document.execCommand('copy');
-                    }
-                }
-
-                // 复制链接
-                function wechatNumCopy(num) {
-                    copyFn(num);
-                    $(online_selector + ' .wechat-num-copy-modal').toggleClass('is-active');
-                }
-            </script>
-        -->
-        </div>
         <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
-        <script>
-            // 异步加载图片
-            $('img[data-src]').lazyload();
-
-            // 存在备案号时才显示备案号
-            if ($('.beian-num').text().trim()) {
-                $('.beian-num').show();
-            }
-
-            // animate
-            if (window.scrollY < 100) { // 解决网页滚动到指定位置时会出现页面错乱
-                ScrollReveal().reveal('.section', { distance: '150%', origin: 'bottom', opacity: null });
-            }
-        </script>
         <script type="text/javascript" src="./script/customer.js"></script>
     </div>
 </body>
