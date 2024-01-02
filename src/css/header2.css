@@ -657,3 +657,19 @@ a.more {
     margin: 12px 12px 0px;
     border-top: 1px solid #ececec;
 }
+
+@media screen and (min-width: 768px) {
+    .bannerimage{
+        background-image: url("http://cdn.xingmenglaw.com/banner.png");
+        background-position: center;
+        background-size: 100% 100%; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bannerimage{
+        background-image: url("http://cdn.xingmenglaw.com/banner.png");
+        background-position: center;
+        background-size: auto 100%; 
+    }
+}
