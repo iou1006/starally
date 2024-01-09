@@ -14,22 +14,22 @@
 
 <body style="height: 100%;">
     <div component="header.html">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.5/css/bulma.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-modal-fx@1.1.1/dist/css/modal-fx.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/bulma.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/modal-fx.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/font-awesome.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/swiper.min.css">
 
         <script src="./script/push.js"></script>
 
-        <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/swiper.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/scrollreveal.min.js"></script>
 
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bulma-modal-fx@1.1.1/dist/js/modal-fx.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/holderjs@2.9.7/holder.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/jquery-1.11.3.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/anime.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/modal-fx.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/jquery.waypoints.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/sticky.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/holder.min.js"></script>
 
         <style type="text/css">
             @media screen and (min-width: 768px) {
@@ -109,16 +109,30 @@
                     <div style="border: 0.5px solid #ececec; width: 100vw; margin: 0 0vw 0 0vw;" class="is-hidden-mobile"></div>
                 </div>
             </div>
-            <style type="text/css">
-                .textIndex {
-                    font-size: 2.52em;
-                    color: #fff;
-                    text-align: center;
-                }
-            </style>
         </header>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll(
+                '.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
 
+        if (window.innerWidth < 768) {
+            var sticky = new Waypoint.Sticky({
+                element: $('#header_1')[0]
+            })
+        }
+    </script>
     <div component="index_intro.html">
         <div id="gongsijieshao1" class="section" style="visibility: visible;">
             <div class="container">
@@ -138,7 +152,11 @@
                     </div>
                     <div class="column is-8">
                         <p class="contents">
-                            上海星盟律师事务所由多位具有多年执业经验的资深律师创办，创始合伙人大多毕业于国内外知名大学法学院，并具有硕士学位。星盟部分律师曾在国外深造，熟悉国外法律体系，并能熟练运用英文从事法律服务，部分律师有在司法机构以及大型企业工作经历和经验。 星盟崇尚团队合作的理念和文化，致力于为客户提供高效、精准、创新的法律服务。星盟既能通过团队工作方式为客户提供涵盖各个行业领域在内的综合性法律服务，又能通过业务部门划分、团队内部分工方式发挥各个律师在各个领域的专长，满足客户的个性化需求。<p>在业务领域方面，星盟律师专业服务范围覆盖刑事辩护、婚姻法律服务、房地产法律服务、知识产权、国际贸易及海关合规、政府与企业法律顾问、家族财富传承、破产清算等诉讼与非诉板块领域。凭借扎实的法律功底和丰富的实践经验，星盟律师团队为客户提供全方位、一站式的法律解决方案，助力客户实现商业价值最大化。
+                            上海星盟律师事务所是一家依托于互联网媒介的创新型律师事务所，执业律师大多毕业于国内外知名大学法学院，汇聚了在公司商事、刑事辩护、婚姻家事、房地产、知识产权等领域具有多年执业经验的复合型律师人才。
+                        </p>
+                        <br>
+                        <p class="contents">
+                            星盟律师可承接全国各地的案件。“以璀璨星光 凝聚希望之盟”是我们伊始至终的服务理念，星盟的每一位律师将如璀璨星光一般，给每一个遇到法律问题的朋友带去温暖和希望。
                         </p>
                     </div>
                 </div>
@@ -287,7 +305,7 @@
                                                 </p>
                                                 <p class="intro">
                                                     蓝江律师毕业于上海财经大学法学院，获硕士学位，留学美国伊利诺伊大学香槟分校（UIUC）法学院，获硕士学位，现担任上海市律师协会公司与商事业务委员会委员。
-                                                    蓝江律师同时拥有中国和美国纽约州律师执业资格，曾就职于中伦律师事务所等外资和国内顶尖的律师事务所，能够熟练地使用中文和英文为客户提供法律服务。
+                                                    蓝江律师同时拥有中国和美国纽约州律师资格，曾就职于中伦律师事务所等外资和国内顶尖的律师事务所，能够熟练地使用中文和英文为客户提供法律服务。
                                                     蓝江律师在公司法、劳动人事合规、融资并购、重大商事争议解决领域拥有十多年的执业经验。
                                                 </p>
                                             </div>
@@ -313,7 +331,7 @@
                                                     <div class="dashline"></div>
                                                 </p>
                                                 <p class="intro">
-                                                    刘晓宇律师毕业于华东政法大学，获法学学士、硕士学位。
+                                                    刘晓宇律师毕业于华东政法大学，获法学学士、法律硕士学位。
                                                     刘晓宇律师擅长刑事辩护与刑事控告、民商事案件代理工作，
                                                     曾参与多起重大、复杂的经济犯罪、职务犯罪等刑事案件的辩护与公司、合同、商事纠纷案件的代理工作，
                                                     尤以经济犯罪辩护为专长，所代理案件多数取得良好的办理结果。在诉讼之外，
@@ -411,7 +429,7 @@
                                     </td>
                                     <td>
                                         <div class="column" style="padding-top: 2em;">
-                                            <li class="subtitle">地址：上海市长宁区延安西路728号10楼G座</li>
+                                            <li class="subtitle">地址：上海市普陀区同普路299弄浙铁绿城·长风中心一期办公楼3号楼1602室</li>
                                         </div>
                                     </td>
                                 </tr>
@@ -436,7 +454,7 @@
             <span>版权所有</span>
             <a style="display: none;" href="http://beian.miit.gov.cn/" dynamic-var="config['公共']['备案号']" class="beian-num"></a>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/lazyload.min.js"></script>
         <script type="text/javascript" src="./script/customer.js"></script>
     </div>
 </body>

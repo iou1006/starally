@@ -13,22 +13,22 @@
 
 <body>
     <div component="header.html">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.5/css/bulma.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-modal-fx@1.1.1/dist/css/modal-fx.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/bulma.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/modal-fx.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/font-awesome.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/swiper.min.css">
 
         <script src="../script/push.js"></script>
 
-        <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/swiper.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/scrollreveal.min.js"></script>
 
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bulma-modal-fx@1.1.1/dist/js/modal-fx.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/holderjs@2.9.7/holder.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/jquery-1.11.3.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/anime.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/modal-fx.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/jquery.waypoints.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/sticky.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/holder.min.js"></script>
         <header id="header_1">
             <div class="container is-hidden-mobile">
                 <div class="level padding-ud-3">
@@ -79,7 +79,28 @@
             </div>
         </header>
     </div>
-    <!-- banner图 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll(
+                '.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+
+        if (window.innerWidth < 768) {
+            var sticky = new Waypoint.Sticky({
+                element: $('#header_1')[0]
+            })
+        }
+    </script>
     <div>
         <a class="banner bannerimage" href="#">
 
@@ -122,7 +143,7 @@
                             <img src="http://cdn.xingmenglaw.com/%E7%8E%8B%E8%B5%AB%E5%BE%8B%E5%B8%88.png" alt="avator"/>
                         </div>
                     </div>
-                    <div class="column is-7" style="display: inline-block;">
+                    <div class="column is-9" style="display: inline-block;">
                         <div class="content">
                             <div class="title">王赫</div>
                             <div>
@@ -193,7 +214,7 @@
                                     </td>
                                     <td>
                                         <div class="column" style="padding-top: 2em;">
-                                            <li class="subtitle">地址：上海市长宁区延安西路728号10楼G座</li>
+                                            <li class="subtitle">地址：上海市普陀区同普路299弄浙铁绿城·长风中心一期办公楼3号楼1602室</li>
                                         </div>
                                     </td>
                                 </tr>

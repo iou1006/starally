@@ -15,22 +15,22 @@
 
 <body>
     <div component="header.html">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.5/css/bulma.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-modal-fx@1.1.1/dist/css/modal-fx.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/bulma.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/modal-fx.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/font-awesome.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/swiper.min.css">
 
         <script src="./script/push.js"></script>
 
-        <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/swiper.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/scrollreveal.min.js"></script>
 
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bulma-modal-fx@1.1.1/dist/js/modal-fx.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/holderjs@2.9.7/holder.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/jquery-1.11.3.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/anime.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/modal-fx.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/jquery.waypoints.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/sticky.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/holder.min.js"></script>
         <header id="header_1">
             <div class="container is-hidden-mobile">
                 <div class="level padding-ud-3">
@@ -81,6 +81,28 @@
             </div>
         </header>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll(
+                '.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+
+        if (window.innerWidth < 768) {
+            var sticky = new Waypoint.Sticky({
+                element: $('#header_1')[0]
+            })
+        }
+    </script>
     <!-- banner图 -->
     <div>
         <a class="banner bannerimage" href="#">
@@ -141,7 +163,7 @@
                                                 </p>
                                                 <p class="intro">
                                                     蓝江律师毕业于上海财经大学法学院，获硕士学位，留学美国伊利诺伊大学香槟分校（UIUC）法学院，获硕士学位，现担任上海市律师协会公司与商事业务委员会委员。
-                                                    蓝江律师同时拥有中国和美国纽约州律师执业资格，曾就职于中伦律师事务所等外资和国内顶尖的律师事务所，能够熟练地使用中文和英文为客户提供法律服务。
+                                                    蓝江律师同时拥有中国和美国纽约州律师资格，曾就职于中伦律师事务所等外资和国内顶尖的律师事务所，能够熟练地使用中文和英文为客户提供法律服务。
                                                     蓝江律师在公司法、劳动人事合规、融资并购、重大商事争议解决领域拥有十多年的执业经验。
                                                 </p>
                                             </div>
@@ -167,7 +189,7 @@
                                                     <div class="dashline"></div>
                                                 </p>
                                                 <p class="intro">
-                                                    刘晓宇律师毕业于华东政法大学，获法学学士、硕士学位。
+                                                    刘晓宇律师毕业于华东政法大学，获法学学士、法律硕士学位。
                                                     刘晓宇律师擅长刑事辩护与刑事控告、民商事案件代理工作，
                                                     曾参与多起重大、复杂的经济犯罪、职务犯罪等刑事案件的辩护与公司、合同、商事纠纷案件的代理工作，
                                                     尤以经济犯罪辩护为专长，所代理案件多数取得良好的办理结果。在诉讼之外，
@@ -292,7 +314,7 @@
                                     </td>
                                     <td>
                                         <div class="column" style="padding-top: 2em;">
-                                            <li class="subtitle">地址：上海市长宁区延安西路728号10楼G座</li>
+                                            <li class="subtitle">地址：上海市普陀区同普路299弄浙铁绿城·长风中心一期办公楼3号楼1602室</li>
                                         </div>
                                     </td>
                                 </tr>
@@ -317,7 +339,7 @@
             <span>版权所有</span>
             <a style="display: none;" href="http://beian.miit.gov.cn/" dynamic-var="config['公共']['备案号']" class="beian-num"></a>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/lazyload.min.js"></script>
         <script type="text/javascript" src="./script/customer.js"></script>
     </div>
 </body>

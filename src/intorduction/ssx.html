@@ -13,22 +13,22 @@
 
 <body>
     <div component="header.html">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.5/css/bulma.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-modal-fx@1.1.1/dist/css/modal-fx.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/bulma.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/modal-fx.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/font-awesome.min.css">
+        <link rel="stylesheet" href="http://cdn.xingmenglaw.com/swiper.min.css">
 
         <script src="../script/push.js"></script>
 
-        <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/swiper.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/scrollreveal.min.js"></script>
 
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bulma-modal-fx@1.1.1/dist/js/modal-fx.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/holderjs@2.9.7/holder.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/jquery-1.11.3.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/anime.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/modal-fx.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/jquery.waypoints.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/sticky.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/holder.min.js"></script>
         <header id="header_1">
             <div class="container is-hidden-mobile">
                 <div class="level padding-ud-3">
@@ -79,7 +79,28 @@
             </div>
         </header>
     </div>
-    <!-- banner图 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll(
+                '.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+
+        if (window.innerWidth < 768) {
+            var sticky = new Waypoint.Sticky({
+                element: $('#header_1')[0]
+            })
+        }
+    </script>
     <div>
         <a class="banner bannerimage" href="#">
 
@@ -115,6 +136,10 @@
             ol {
                 list-style-type: decimal;
                 line-height: 1.8em;
+            } 
+            ul.square {list-style-type: square;}
+            li {
+                line-height: 1.8em;
             }
         </style>
         <div id="details" class="section" style="visibility: visible;">
@@ -125,7 +150,7 @@
                             <img src="http://cdn.xingmenglaw.com/%E5%AD%99%E8%83%9C%E8%B4%A4%E5%BE%8B%E5%B8%88.png" alt="avator"/>
                         </div>
                     </div>
-                    <div class="column is-7" style="display: inline-block;">
+                    <div class="column is-9" style="display: inline-block;">
                         <div class="content">
                             <div class="title">孙胜贤</div>
                             <div>
@@ -145,33 +170,22 @@
                             <br>
                             <ol>
                                 <li>诉讼、仲裁类
-                                    <div>
-                                        曾成功办理多起涉案金额超千万元的民商事诉讼并胜诉；
-                                        <br>
-                                        曾为中国大唐集团（央企）及旗下子公司、华融资管、东方资管、地方商业银行等提供包括债务人资产重组、
-                                        不良资产处置诉讼等在内的专项法律服务；
-                                        <br>
-                                        
-                                        曾代表俄罗斯卢克伊尔石油公开合股公司（世界五百强）、坚朗五金（股票代码：002791）处理其在中国涉及商标、
-                                        著作权侵权等领域的知识产权和不正当竞争案件；
-                                        <br>
-
-                                        代表房地产、建筑工程企业诉讼，如合作类、工程施工类、营销类以及客户集体维权类诉讼 。
-
-                                    </div>
+                                    <ul class="square">
+                                        <li>曾成功办理多起涉案金额超千万元的民商事诉讼并胜诉；</li>
+                                        <li>曾为中国大唐集团（央企）及旗下子公司、华融资管、东方资管、地方商业银行等提供包括债务人资产重组、
+                                        不良资产处置诉讼等在内的专项法律服务；</li>
+                                        <li>曾代表俄罗斯卢克伊尔石油公开合股公司（世界五百强）、坚朗五金（股票代码：002791）处理其在中国涉及商标、
+                                        著作权侵权等领域的知识产权和不正当竞争案件；</li>
+                                        <li>代表房地产、建筑工程企业诉讼，如合作类、工程施工类、营销类以及客户集体维权类诉讼 ；</li>
+                                    </ul>
                                 </li>
-                                
+                                <br>
                                 <li>法律服务类
-                                    <div>
-                                        为承德丰宁县政府、山东水发控股集团等单位提供涉及并购重组、PPP 项目融资、招投标等领域的法律服务；
-                                        <br>
-
-                                        曾作为主办律师团队成员之一，为北京某矿业权交易所制定交易规则、交易指南等一系列交易文件提供全程法律服务；
-                                        <br>
-
-                                        为某金融类集团控股有限公司之产业项目（覆盖医疗、消费食品、房地产等领域）投融资提供法律服务以及为其旗下产业投资中心管理的私募基金提供包括基金设立、募集、管理以及登记等事项在内的法律服务。
-
-                                    </div>
+                                    <ul class="square">
+                                        <li>为承德丰宁县政府、山东水发控股集团等单位提供涉及并购重组、PPP 项目融资、招投标等领域的法律服务；</li>
+                                        <li>曾作为主办律师团队成员之一，为北京某矿业权交易所制定交易规则、交易指南等一系列交易文件提供全程法律服务；</li>
+                                        <li>为某金融类集团控股有限公司之产业项目（覆盖医疗、消费食品、房地产等领域）投融资提供法律服务以及为其旗下产业投资中心管理的私募基金提供包括基金设立、募集、管理以及登记等事项在内的法律服务；</li>
+                                    </ul>
                                 </li>
                             </ol>
                     </div>
@@ -206,7 +220,7 @@
                                     </td>
                                     <td>
                                         <div class="column" style="padding-top: 2em;">
-                                            <li class="subtitle">地址：上海市长宁区延安西路728号10楼G座</li>
+                                            <li class="subtitle">地址：上海市普陀区同普路299弄浙铁绿城·长风中心一期办公楼3号楼1602室</li>
                                         </div>
                                     </td>
                                 </tr>
@@ -231,7 +245,7 @@
             <span>版权所有</span>
             <a style="display: none;" href="http://beian.miit.gov.cn/" dynamic-var="config['公共']['备案号']" class="beian-num"></a>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+        <script src="http://cdn.xingmenglaw.com/js/lazyload.min.js"></script>
         <script type="text/javascript" src="../script/customer.js"></script>
     </div>
 </body>
